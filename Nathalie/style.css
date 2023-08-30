@@ -1,0 +1,111 @@
+:root {
+    /*color*/
+    --background-color: #EEF6EE;
+    --accent-color: #96DEF8;
+    --text-color: black;
+
+    /*text*/
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeMedium: 1.2rem;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
+    --fontSizeXXLarge: calc(var(--fontSizeMedium)*2.5);
+
+    /*spacing*/
+    --spaceXSmall: calc(var(--fontSizeMedium)/2);
+    --spaceSmall: calc(var(--fontSizeMedium)/1.5);
+    --spaceMedium: 1rem;
+    --spaceLarge: calc(var(--fontSizeMedium)*1.5);
+    --spaceXLarge: calc(var(--fontSizeMedium)*2);
+}
+
+
+
+body {
+    background-color: #EEF6EE;
+    margin: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main {
+    background-image: url('images/skills_background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative; 
+}
+footer {
+    background: var(--accent-color);
+}
+.profile__dias {
+    max-width: 100%;
+}
+.profile__info {
+    text-align: center;
+    margin: auto;
+}
+.info__name {
+    font-size: var(--fontSizeXXLarge);
+    margin: 0.2rem;
+}
+.info__carrer {
+    font-size: var(--fontSizeLarge);
+    margin: 0.2rem;
+}
+.info__tagline {
+    font-size: var(--fontSizeMedium);
+    margin: 0.2rem;
+}
+
+.skills {
+    text-align: center;
+}
+.skills__programs {
+    text-align: center;
+    max-width: 24rem;
+}
+.skills__experience {
+    text-align: center;
+    max-width: 24rem;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project__image {
+    max-width: 20vh;
+    border-radius: 15%;
+}
+
+.footer__section {
+    
+}
+.wave {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.wave::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--accent-color);
+    transform: translate(85%, 60%);
+}
+.wave::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: var(--background-color);
+    transform: translate(-4%, 40%);
+}
