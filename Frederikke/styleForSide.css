@@ -1,0 +1,72 @@
+.info__video {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.textMe {
+    padding: auto;
+}
+
+.pictureMe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+.pictureMe-text {
+    padding-left: 20px;
+}
+
+.pictureMe-img {
+    max-width: 50%;
+    max-height: 100%;
+    border-radius: 60%;
+}
+
+/* mobil-størrelse, med header-menu */
+@media (min-width:48em) and (min-width:1024px) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+/* computer-størrelse */
+@media screen and (min-width: 1025px) {
+    .header .img-logo {
+        height: 60px;
+    }
+
+    .pictureMe-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .upperFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--footer-color);
+        justify-items: center;
+    }
+
+    .footer__links li {
+        padding: 0.5rem;
+        display: inline-block;
+    }
+
+    .footer__socialMedia {
+        align-self: center;
+    }
+}
