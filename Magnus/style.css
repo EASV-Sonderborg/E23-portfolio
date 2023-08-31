@@ -50,6 +50,9 @@ body{
     padding: 1rem;
     font-size: 3rem;
     color: var(--firstColor);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .page1{
@@ -57,7 +60,9 @@ body{
     
 
 }
-
+.page1Content{
+    background-color: var(--thirdColor);
+}
 .page1__img{
     max-width: 30rem;
 }
