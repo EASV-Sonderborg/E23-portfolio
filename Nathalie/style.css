@@ -79,18 +79,19 @@ footer {
 .skills__programs {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 20px;
 }
 .skills__experience {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 20px;
 }
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 4rem;
 }
 .project {
     padding: 2rem;
