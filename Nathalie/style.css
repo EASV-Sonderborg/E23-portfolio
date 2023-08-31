@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 :root {
     /*color*/
     --background-color: #EEF6EE;
@@ -11,6 +12,7 @@
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
     --fontSizeXXLarge: calc(var(--fontSizeMedium)*2.5);
+    --font-family: 'Kalam', cursive;
 
     /*spacing*/
     --spaceXSmall: calc(var(--fontSizeMedium)/2);
@@ -18,6 +20,9 @@
     --spaceMedium: 1rem;
     --spaceLarge: calc(var(--fontSizeMedium)*1.5);
     --spaceXLarge: calc(var(--fontSizeMedium)*2);
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: var(--font-family);
 }
 
 
@@ -31,13 +36,13 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 main {
-    background-image: url('images/skills_background.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative; 
+    position: relative;
+    margin: 0;
 }
 footer {
     background: var(--accent-color);
+    padding: 1rem;
+    margin: 0;
 }
 .profile__dias {
     max-width: 100%;
@@ -61,51 +66,52 @@ footer {
 
 .skills {
     text-align: center;
+    background-image: url('images/stars_background.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    margin: 4rem;
+}
+.skills__header {
+    font-size: var(--fontSizeLarge);
+    padding-top: 4rem;
 }
 .skills__programs {
-    text-align: center;
-    max-width: 24rem;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 .skills__experience {
-    text-align: center;
-    max-width: 24rem;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
-.project {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+.project {
+    padding: 2rem;
 }
 .project__image {
-    max-width: 20vh;
+    max-width: 40vh;
     border-radius: 15%;
 }
 
-.footer__section {
-    
-}
 .wave {
-    position: absolute;
-    height: 225px;
     width: 100%;
-    bottom: 0;
 }
-.wave::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: var(--accent-color);
-    transform: translate(85%, 60%);
+
+.footer__header {
+    text-align: center;
+    font-size: var(--fontSizeLarge);
 }
-.wave::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: var(--background-color);
-    transform: translate(-4%, 40%);
+.findme {
+    text-align: center;
+}
+.fineme__some {
+    max-width: 5%;
+    padding: .5rem;
 }
