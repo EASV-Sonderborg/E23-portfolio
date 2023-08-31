@@ -1,0 +1,41 @@
+:root{--firstColor:#FDFFF7;
+    --secondColor:#50514F;
+    --thirdColor:#59FFA0;
+    --fourthColor:#B4ADEA;
+    --fithColor:#FFED65;
+}
+
+body{
+    margin: 1rem;
+    background-color: var(--firstColor);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__name{
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondColor);
+    
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--secondColor);
+    
+}
+
+.navList{
+    display: flex;
+    justify-content: center;
+}
+.navList__item{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
