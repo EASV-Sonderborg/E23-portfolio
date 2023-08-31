@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <title>Magnus Lützen</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <h1 class="header__name">Magnus Lützen</h1>
         <nav class="nav">
@@ -20,13 +24,24 @@
     </header>
 
     <main>
-        <section class="frontPage">
-            <img src="" alt="">
-            <section class="frontPage__text">
-                <h1 class="frontPage__textHeadline">Content Creator og Digital Marketer</h1>
-                <h2 class="frontPage__textTagline">Det er ikke så svært når man bare får det lært</h2>
+        <section class="page1">
+            <section class="page1Content">
+                <img class="page1__img" src="imgs/headshot.jpg" alt="Profile Picture">
+                <section class="page1__text">
+                    <h1 class="page1__textHeadline">Content Creator og Digital Marketer</h1>
+                    <h2 class="page1__textTagline">Det er ikke så svært når man bare får det lært</h2>
+                </section>
             </section>
+            <button class="pageMover">
+                <ion-icon name="arrow-down-outline"></ion-icon>
+            </button>
+        </section>
 
+        <section class="page2">
+            <video src=""></video>
+            <img src="" alt="">
+
+            <button>Down</button>
         </section>
 
     </main>
@@ -34,7 +49,8 @@
     <footer>
 
     </footer>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
