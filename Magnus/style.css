@@ -3,11 +3,14 @@
     --thirdColor:#59FFA0;
     --fourthColor:#B4ADEA;
     --fithColor:#FFED65;
+    --sixColor:#e3e5de;
 }
 
 body{
     margin: 1rem;
+    margin-top: 0;
     background-color: var(--firstColor);
+    color: var(--secondColor);
 }
 
 .header{
@@ -38,7 +41,12 @@ body{
 .navList__item{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    padding: 0;
+    margin: 1rem;
     
+}
+.navList__itemLast{
+    margin-right: 0;
 }
 
 .pageMover{
@@ -54,15 +62,44 @@ body{
     bottom: 1rem;
     right: 1rem;
 }
+.footer{
+
+}
+
+
 
 .page1{
-    display: flex;
+    height: 100vh;
     
 
 }
 .page1Content{
-    background-color: var(--thirdColor);
+    background-color: var(--sixColor);
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    
+    
 }
 .page1__img{
-    max-width: 30rem;
+    max-width: 55rem;
+    margin: 1rem;
+}
+.page1__text{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1__textHeadline{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+
+}
+.page1__textTagline{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
