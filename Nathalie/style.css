@@ -68,7 +68,7 @@ footer {
     text-align: center;
     background-image: url('images/stars_background.png');
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     margin: 4rem;
 }
@@ -101,8 +101,20 @@ footer {
     border-radius: 15%;
 }
 
+.skills__programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.programs__logo {
+    max-width: 10%;
+    border-radius: 15%;
+    margin: 1rem;
+}
+
 .wave {
     width: 100%;
+    margin-bottom: -1rem;
 }
 
 .footer__header {
