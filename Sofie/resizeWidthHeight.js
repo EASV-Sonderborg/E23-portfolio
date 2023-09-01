@@ -10,10 +10,7 @@ function updateSize() {
     content.style.width = '75vw';
     
     browserContent.style.height = '100%';
-    browserContent.style.width = '100%'; // Set the width to match parent
-    
-    // If you want to allow scrolling within browserContent
-    browserContent.style.overflow = "auto"; 
+    browserContent.style.width = '100%';
   }
   
   updateSize();
