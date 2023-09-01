@@ -1,9 +1,11 @@
 :root {
     /* Farver */
-    --font-color: #fcf4f4;
+    --font-headercolor: #FCF4F4;
+    --font-pcolor: #FCFCFC;
+    --font-labelcolor: #F7F7F7;
     --header-color: #6da5c0;
     --footer-color: #6da5c0;
-    --background-color: #245E7D;
+    --background-color: #225977;
 
     /* Font size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
@@ -21,8 +23,17 @@
 
 }
 
+h2 {
+    color: var(--font-headercolor);
+}
+
+h3 {
+    color: var(--font-labelcolor);
+}
+
 p {
-    color: var(--font-color);
+    color: var(--font-pcolor);
+    line-height: 25px;
 }
 
 body {
@@ -34,7 +45,7 @@ a {
     font-family: "Bebas Neue";
     font-weight: 300;
     text-align: center;
-    color: var(--font-color);
+    color: var(--font-headercolor);
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -155,7 +166,7 @@ a {
 .upperFooter {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--footer-color);
+    background-color: var(--footer-headercolor);
     justify-items: center;
     width: 100vw;
 }
