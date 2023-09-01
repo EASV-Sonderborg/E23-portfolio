@@ -1,4 +1,5 @@
-:root{--firstColor:#FDFFF7;
+:root{
+    --firstColor:#FDFFF7;
     --secondColor:#50514F;
     --thirdColor:#59FFA0;
     --fourthColor:#B4ADEA;
@@ -37,16 +38,33 @@ body{
 .navList{
     display: flex;
     justify-content: center;
+    
 }
 .navList__item{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding: 0;
     margin: 1rem;
+    transition: 0.2s;
+    
     
 }
+
+.navList__item:hover{
+    transform: scale(1.5);
+}
+
 .navList__itemLast{
     margin-right: 0;
+}
+.navLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.navIcon{
+    font-size: 2rem;   
 }
 
 .pageMover{
