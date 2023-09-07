@@ -271,7 +271,7 @@ h1, h2, h3, h4, p, a {
     align-items: center;
     gap: .25rem;
 
-    background-color: rgb(53, 118, 243);
+    background-color: #194AA6;
     box-shadow: inset 2px 2px 18px rgb(30, 70, 180);
     border-radius: .25rem;
 
@@ -502,7 +502,8 @@ h1, h2, h3, h4, p, a {
 
 .hero__img {
     width: 100%;
-    height: 400px;
+    object-fit: cover;
+    height: 545px;
 }
 
 /* Source: https://codepen.io/t_afif/pen/eYMbrJN */
@@ -524,8 +525,8 @@ h1, h2, h3, h4, p, a {
     box-shadow: -1px 4px 20px 6px rgb(0, 0, 0, .25);
 
     position: absolute;
-    top: 16px;
-    left: 190px;
+    top: 150px;
+    right: 16px;
   }
 
   .left {
@@ -553,38 +554,36 @@ h1, h2, h3, h4, p, a {
 .about__section{
     width: 300px;
 
-    margin: 0 auto;
     padding: .5rem;
 
-    background-color: rgb(0, 84, 233, .4);
-    border: thin var(--blue) solid;
+    background-color: rgb(230, 230, 230, .4);
     border-radius: .6rem;
 }
 
-.about__me {
-    grid-column: 2;
-    grid-row: 1;
+/* .about__me {
+    background-color: red;
+} */
 
-        
+.--header {
+    text-shadow: none;
 }
 
-.about__contact {
-    grid-column: 2;
-    grid-row: 3;
+.--text {
+    text-shadow: none;
 }
+
+/* .about__contact {
+    
+} */
 
 .--mail {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+    
 
     margin-bottom: .5rem;
 }
 
 .--phone {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+    
 
     margin-bottom: .5rem;
 }
@@ -605,11 +604,9 @@ h1, h2, h3, h4, p, a {
     border-bottom: 2px solid var(--black);
 }
 
-.--linkedin {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
+/* .--linkedin {
+    
+} */
 
 .--linkedin img {
     width: 48px;
@@ -623,17 +620,13 @@ h1, h2, h3, h4, p, a {
     width: 48px;
 }
 
-.about__projects {
-    grid-column: 1;
-    grid-row: 5;
+/* .about__projects {
+    
 }
 
 .about__hobby {
-    grid-area: hobby;
-
-    grid-column: 3;
-    grid-row: 5;
-}
+    
+} */
 
 .about__header {
     margin-bottom: .25rem;
@@ -643,35 +636,4 @@ h1, h2, h3, h4, p, a {
 .about__body {
     margin-bottom: .25rem;
     text-shadow: none;
-}
-
-.vertical__line {
-    height: 6rem;
-    width: .25rem;
-
-    background-color: var(--black);
-
-    margin: 0 auto;    
-}
-
-.--first {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.--second {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.horizontal__line {
-    margin: auto 0;
-
-    grid-column: 2;
-    grid-row: 5;
-
-    height: .25rem;
-    width: auto;
-    
-    background-color: var(--black);
 }
