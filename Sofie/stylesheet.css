@@ -543,21 +543,13 @@ h1, h2, h3, h4, p, a {
 }
 
 .about {
-    display: grid;
-    gap: .5rem;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(5, auto);
-
-    margin: 1rem;
+    margin-left: .5rem;
+    margin-bottom: 2.5rem;
 }
 
 .about__section{
-    width: 300px;
-
     padding: .5rem;
 
-    background-color: rgb(230, 230, 230, .4);
-    border-radius: .6rem;
 }
 
 /* .about__me {
@@ -620,11 +612,21 @@ h1, h2, h3, h4, p, a {
     width: 48px;
 }
 
-/* .about__projects {
-    
+.about__projects h4,h3, a, p {
+    text-shadow: none;
 }
 
-.about__hobby {
+.projects__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+.projects__galleryImg {
+    width: 100%;
+}
+
+/*.about__hobby {
     
 } */
 
