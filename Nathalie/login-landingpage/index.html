@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="login__page">
+        <section class="form">
+            <section class="page__buttons">
+                <button class="login__landingpage landingpage__button --active">Login</button>
+                <button class="signup__landingpage landingpage__button">Signup</button>
+            </section>
+            <form class="login__form">
+                <img class="profile" src="images/profile.png" alt="tomt profil billede">
+                <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Becris - Flaticon</a> -->
+                <p class="login__error"></p>
+                <p class="input__text">Brugernavn:</p>
+                <input class="input__field username" type="text"/>
+                <p class="input__text">Kodeord:</p>
+                <!-- Ew div -->
+                <div class="pwdWrap">
+                    <input class="input__field password" type="password" name="password" required/>
+                    <i class="fas fa-eye eyeIcon"></i>
+                </div>
+                <button class="login__button">Login</button>
+            </form>
+
+            <form class="signup__form">
+                <p class="input__text">Fornavn:</p>
+                <input class="input__field" type="text"/>
+                <p class="input__text">Efternavn:</p>
+                <input class="input__field" type="text"/>
+                <p class="input__text">E-mail:</p>
+                <input class="input__field" type="email"/>
+                <p class="input__text">Brugernavn:</p>
+                <input class="input__field username" type="text"/>
+                <p class="input__text">Kodeord:</p>
+                <input class="input__field password" type="password"/>
+                <button class="signup__button">Signup</button>
+            </form>
+        </section>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
