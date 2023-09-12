@@ -47,8 +47,8 @@
 
 
 .pictureMe-img {
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 95%;
+    max-height: 95%;
     border-radius: 50%;
 
     grid-column: 2;
