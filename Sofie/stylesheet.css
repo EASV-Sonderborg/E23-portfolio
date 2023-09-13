@@ -271,7 +271,7 @@ h1, h2, h3, h4, p, a {
     align-items: center;
     gap: .25rem;
 
-    background-color: #194AA6;
+    background-color: #3661B1;
     box-shadow: inset 2px 2px 18px rgb(30, 70, 180);
     border-radius: .25rem;
 
@@ -284,7 +284,7 @@ h1, h2, h3, h4, p, a {
 }
 
 .footer__app:hover {
-    background-color: rgb(90, 126, 220, .5);
+    background-color: rgb(130, 240, 240, 0.3);
 }
 
 .footer__appImg {
@@ -624,6 +624,45 @@ h1, h2, h3, h4, p, a {
 
 .projects__galleryImg {
     width: 100%;
+}
+
+.projects__loginHeader {
+    margin-bottom: .5rem;
+}
+
+.projects__ideation--body {
+    margin-bottom: .25rem;
+}
+
+.cp_embed_wrapper {
+    margin-bottom: 1.25rem;
+}
+
+.projects__navbar {
+    margin-top: .5rem;
+    margin-bottom: 1.25rem;
+}
+
+.projects__navbarItem {
+    list-style: none;
+
+    background-color: rgb(112, 158, 104);
+    border-radius: 6px;
+    width: fit-content;
+    padding: 8px 16px;
+}
+
+.projects__navbarItem--link {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+
+    margin-bottom: 1.25rem;
 }
 
 /*.about__hobby {
