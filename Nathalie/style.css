@@ -47,6 +47,8 @@ footer {
 /*.profile__dias {
     max-width: 100%;
 }*/
+
+/* okay nvm med clip-path 
 div[class] {
     display:inline-block;
     width: 100%;
@@ -60,7 +62,10 @@ div[class] {
     background:url('images/full_profile.png') center/cover;
     clip-path: polygon(0% 0%, 0% 95%, 8% 91%, 18% 87%, 28% 86%, 37% 89%, 45% 93%, 54% 93%, 65% 90%, 70% 84%, 76% 74%, 75% 61%, 72% 49%, 73% 36%, 78% 26%, 83% 17%, 89% 7%, 90% 0%);
 }
-
+*/
+.profile__images {
+    max-width: 100%;
+}
 .profile__info {
     text-align: center;
     margin: auto;
@@ -114,6 +119,86 @@ div[class] {
     max-width: 40vh;
     border-radius: 15%;
 }
+
+
+
+/* */
+.custom-btn {
+    max-width: 40vh;
+    max-height: 40vh;
+    border-radius: 15%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+.btn-3 {
+    padding: 0;
+    border: none;
+    border-radius: 15%;
+}
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: #96DEF8;
+    transition: all 0.3s ease;
+}
+.btn-3:before {
+    height: 0%;
+    width: 10px;
+}
+.btn-3:after {
+    width: 0%;
+    height: 10px;
+}
+.btn-3:hover:before {
+    height: 100%;
+}
+.btn-3:hover:after {
+    width: 100%;
+}
+.btn-3 span:hover{
+    color: #96DEF8;
+ }
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #96DEF8;
+    transition: all 0.3s ease;
+}
+.btn-3 span:before {
+    width: 10px;
+    height: 0%;
+}
+.btn-3 span:after {
+    width: 0%;
+    height: 10px;
+}
+.btn-3 span:hover:before {
+    height: 100%;
+}
+.btn-3 span:hover:after {
+    width: 100%;
+}
+.project__image:hover {
+    filter: blur(2px);
+}
+.project__text {
+    display: none;
+    
+}
+
+
+/**/
 
 .skills__programs {
     display: flex;

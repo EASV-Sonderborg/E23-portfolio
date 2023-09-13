@@ -9,6 +9,8 @@
 <body>
     <header>
         <article class="profile">
+            <img class="profile__images" src="images/Profile.png" alt="">
+            <!-- okay nvm med clip-path
             <div class="hexagone"></div>
             <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <defs>
@@ -19,6 +21,7 @@
                     </filter>
                   </defs>
               </svg>
+            -->  
         </article>
         <article class="profile__info">
             <h1 class="info__name">Nathalie Henriette Autzen</h1>
@@ -30,19 +33,50 @@
     <main>
         <section class="portfolio">
             <article class="project">
-                <img class="project__image" src="images/project_show_design.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                            <p class="project__text">Tekst</p>
+                            <img class="project__image" src="images/project_show_design.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <a href="login-landingpage/index.html" target="_blank"><img class="project__image" src="images/project-coding-login.png" alt=""></a>
+                <a href="login-landingpage/index.html" target="_blank">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project-coding-login.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <img class="project__image" src="images/project_show_design.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project_show_design.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <img class="project__image" src="images/project_show_design.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project_show_design.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <img class="project__image" src="images/project_show_coding.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project_show_coding.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
         </section>
 
@@ -98,5 +132,6 @@
         </section>
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
