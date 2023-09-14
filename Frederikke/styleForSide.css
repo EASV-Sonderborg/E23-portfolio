@@ -65,6 +65,11 @@
     padding-left: var(--spaceLarge);
 }
 
+.projetcs__img {
+    display: flex;
+    flex-direction: row;
+}
+
 .project__video-instagram {
     display: flex;
     flex-direction: row;
