@@ -91,6 +91,19 @@
     width: fit-content;
 }
 
+.product {
+    padding-left: var(--spaceLarge);
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    height: 400px;
+}
+
+.productImg {
+    padding-top: 15px;
+    width: fit-content;
+}
+
 .project__video-instagram {
     display: flex;
     flex-direction: row;
