@@ -537,6 +537,9 @@ h1, h2, h3, h4, p, a {
 
   /* - - - - - - - - */
 
+
+ /* - - - - - - - - */
+
 .bubble__header {
     color: var(--white);
     text-shadow: none
@@ -626,8 +629,12 @@ h1, h2, h3, h4, p, a {
     width: 100%;
 }
 
-.projects__loginHeader {
+.projects__header {
     margin-bottom: .5rem;
+}
+
+.github {
+    margin-bottom: 2.5rem;
 }
 
 .projects__ideation--body {
@@ -639,17 +646,17 @@ h1, h2, h3, h4, p, a {
 }
 
 .projects__navbar {
-    margin-top: .5rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.25rem;
 }
 
 .projects__navbarItem {
-    list-style: none;
-
     background-color: rgb(112, 158, 104);
     border-radius: 6px;
     width: fit-content;
     padding: 8px 16px;
+
+    margin-top: .5rem;
 }
 
 .projects__navbarItem--link {
