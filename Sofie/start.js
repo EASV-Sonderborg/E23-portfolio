@@ -3,69 +3,89 @@
 // YAY!
 
 const dragElement = (element, dragzone) => {
-    let pos1 = 0,
-      pos2 = 0,
-      pos3 = 0,
-      pos4 = 0;
-//MouseUp occurs when the user releases the mouse button
-    const dragMouseUp = () => {
-      document.onmouseup = null;
-//onmousemove attribute fires when the pointer is moving while it is over an element.
-      document.onmousemove = null;
+  let pos1 = 0,
+    pos2 = 0,
+    pos3 = 0,
+    pos4 = 0;
 
-      element.classList.remove("drag");
-    };
+  const dragMouseUp = () => {
+    document.onmouseup = null;
+    document.onmousemove = null;
 
-    const dragMouseMove = (event) => {
-
-      event.preventDefault();
-//clientX property returns the horizontal coordinate of the mouse pointer
-      pos1 = pos3 - event.clientX;
-//clientY property returns the vertical coordinate of the mouse pointer
-      pos2 = pos4 - event.clientY;
-      pos3 = event.clientX;
-      pos4 = event.clientY;
-//offsetTop property returns the top position relative to the parent
-      element.style.top = `${element.offsetTop - pos2}px`;
-      element.style.left = `${element.offsetLeft - pos1}px`;
-    };
-
-    const dragMouseDown = (event) => {
-      event.preventDefault();
-
-      pos3 = event.clientX;
-      pos4 = event.clientY;
-
-      element.classList.add("drag");
-
-      document.onmouseup = dragMouseUp;
-      document.onmousemove = dragMouseMove;
-    };
-
-    dragzone.onmousedown = dragMouseDown;
+    element.classList.remove("drag");
   };
 
-  const dragable = document.getElementById("dragable"),
-    dragzone = document.getElementById("dragzone");
+  const dragMouseMove = (event) => {
+    event.preventDefault();
 
-  dragElement(dragable, dragzone);
+    pos1 = pos3 - event.clientX;
+    pos2 = pos4 - event.clientY;
+    pos3 = event.clientX;
+    pos4 = event.clientY;
+
+    element.style.top = `${element.offsetTop - pos2}px`;
+    element.style.left = `${element.offsetLeft - pos1}px`;
+  };
+
+  const dragMouseDown = (event) => {
+    event.preventDefault();
+
+    pos3 = event.clientX;
+    pos4 = event.clientY;
+
+    element.classList.add("drag");
+
+    document.onmouseup = dragMouseUp;
+    document.onmousemove = dragMouseMove;
+  };
+
+  dragzone.onmousedown = dragMouseDown;
+};
+
+const dragable = document.getElementById("dragable"),
+  dragzone = document.getElementById("dragzone");
+
+dragElement(dragable, dragzone);
 
 //Minimer 
-const minimise = document.querySelector('.app__btn--minimise');
+const minimise = document.querySelectorAll('.app__btn--minimise');
+const close = document.querySelectorAll('.app__btn--close')
+
 const app = document.querySelector('.app')
 const toggleBrowser = document.querySelector('.--webBrowser')
 const footerApp = document.querySelector('.footer__app')
+const footerText = document.querySelector('.footer__appBody')
+const footerImg = document.querySelector('.footer__appImg')
 
 const web = document.querySelector('.--web')
 const icon = document.querySelectorAll('.icons')
 
-minimise.addEventListener('click', () => {
-  //footerApp.style.display ='block'
-  toggleBrowser.style.display = 'none';
-  footerApp.classList.add('--minimized');
+const calc = document.querySelector('.--calculator')
+
+minimise.forEach((minimizeButton) => {
+  minimizeButton.addEventListener('click', () => {
+    toggleBrowser.style.display = 'none';
+    footerApp.classList.add('--minimized');
+    footerText.textContent = "Internet Explorer"
+    footerImg.src = "icons/web.png";
+  })
 })
 
 web.addEventListener('dblclick', () => { 
-  toggleBrowser.style.display = 'block';
+  footerApp.style.visibility = 'visible'; 
+  toggleBrowser.style.visibility = 'visible'; 
   footerApp.classList.remove('--minimized');
+  footerText.textContent = "Internet Explorer"
+  footerImg.src = "icons/web.png";
 });
+
+// Close App fully
+close.forEach((closeButton) => {
+  closeButton.addEventListener('click', () => {
+    footerApp.style.visibility = 'hidden'; 
+    toggleBrowser.style.visibility = 'hidden'; 
+    footerApp.classList.remove('--minimized');
+    footerText.textContent = ""
+    footerImg.src = "";
+  })
+})
