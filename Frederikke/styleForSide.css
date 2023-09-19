@@ -7,7 +7,7 @@
 }
 
 .info {
-    padding-left: 2rem;
+    margin-left: 2rem;
 }
 
 .videoMe-video {
@@ -30,21 +30,14 @@
     margin-top: 15%;
     grid-column: 1;
     grid-row: 3;
-    padding-left: var(--spaceLarge);
+    margin-left: var(--spaceLarge);
 }
 
 .pictureMe-text {
     grid-column: 1;
     grid-row: 4;
-    padding-left: var(--spaceLarge);
+    margin-left: var(--spaceLarge);
 }
-
-/* .pictureMe {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 100%;
-} */
-
 
 .pictureMe-img {
     max-width: 95%;
@@ -55,6 +48,10 @@
     grid-row: 4;
 }
 
+.projects {
+    width: 100%;
+}
+
 .projectsHeader {
     display: flex;
     flex-direction: column;
@@ -62,11 +59,11 @@
 }
 
 .project__video {
-    padding-left: var(--spaceLarge);
+    margin-left: var(--spaceLarge);
 }
 
 .projetcs__img {
-    padding-left: var(--spaceLarge);
+    margin-left: var(--spaceLarge);
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -75,7 +72,7 @@
 }
 
 .projetcs__img-me {
-    padding-left: var(--spaceLarge);
+    margin-left: var(--spaceLarge);
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -92,7 +89,7 @@
 }
 
 .product {
-    padding-left: var(--spaceLarge);
+    margin-left: var(--spaceLarge);
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -106,25 +103,27 @@
 
 .project__video-instagram {
     display: flex;
-    flex-direction: row;
     gap: 5px;
-    padding-left: 1rem;
-    max-height: 60%;
-    max-width: 60%;
+    width: 100%;
+    overflow-x: scroll;
+    margin-left: var(--spaceLarge);
 }
 
 .project__video-tiktok {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    padding-left: 1rem;
+    margin-left: var(--spaceLarge);
     max-height: 60%;
     max-width: 60%;
 }
 
 .projects__header {
-    padding-left: var(--spaceLarge);
+    margin-left: var(--spaceLarge);
 }
+
+
+
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
