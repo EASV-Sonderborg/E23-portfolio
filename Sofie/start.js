@@ -1,7 +1,102 @@
+// get all draggie elements
+var draggableElems = document.querySelectorAll(".makeDraggable");
+// array of Draggabillies
+var draggies = [];
+// init Draggabillies
+for (var i = 0; i < draggableElems.length; i++) {
+  var draggableElem = draggableElems[i];
+  var draggie = new Draggabilly(draggableElem, {
+    // options...
+  });
+  draggies.push(draggie);
+}
+
 // Source:
 // https://dev.to/shantanu_jana/how-to-create-a-draggable-div-in-javascript-iff
 // YAY!
 
+/*
+  Refactor drag code, aka project name "dragqueen"
+
+
+
+
+  1) Trigger: mousedown events within dragable sections
+  2) Determine: what is the element that is being dragged
+  3) On mouse down: add listener (onmousemove), call updateDraggableElement
+      + add listener (mouseup)
+  4) On mouse up: Clean up
+
+
+  Usage:
+  - Add class "makeDraggable" to any element to make it draggable
+
+
+*/
+/*
+// Draggable Magic by the DragQueen
+let pos1 = 0,
+  pos2 = 0,
+  positionXbefore = 0,
+  positionYbefore = 0;
+
+function startDraggableMagic() {
+  // This sets up everything needed for making stuff draggable
+
+  // 1) Get all elements that should be draggable
+  const draggableElements = document.querySelectorAll(".makeDraggable");
+  console.log("These elements should be draggable", draggableElements);
+
+  // 2) Add eventlisteners to all
+  draggableElements.forEach((element) => {
+    element.addEventListener("mousedown", (event) => {
+      event.preventDefault();
+
+      // currentTarget is the element that should be dragged
+      console.log(event.currentTarget);
+
+      // call the function that handles the dragging
+      startDragging(element, event);
+    });
+    // // nuke it when mouse is up
+    // element.addEventListener("mouseup", (event) => {
+    //   element.replaceWith(element.cloneNode(true));
+    // });
+  });
+}
+
+function startDragging(element, event) {
+  // Set the position BEFORE dragging
+  positionXbefore = event.clientX;
+  positionYbefore = event.clientY;
+
+  // set drag active class
+  element.classList.add("isDragging");
+
+  // Updates the position of the element for the element
+  element.addEventListener("mousemove", (event) => {
+    updatePosition(element, event);
+  });
+
+  // set event for stop dragging
+  element.removeEventListener("mousemove", (event) => {
+    updatePosition(element, event);
+  });
+}
+function updatePosition(element, event) {
+  // updating the position everytime the cursor moves
+  positionX = positionXbefore - event.clientX;
+  positionY = positionYbefore - event.clientY;
+  positionXbefore = event.clientX;
+  positionYbefore = event.clientY;
+
+  // Update the position via the style property
+  element.style.top = `${element.offsetTop - positionY}px`;
+  element.style.left = `${element.offsetLeft - positionX}px`;
+}
+startDraggableMagic();
+*/
+/* 
 const dragElement = (element, dragzone) => {
   let pos1 = 0,
     pos2 = 0,
@@ -46,46 +141,47 @@ const dragable = document.getElementById("dragable"),
   dragzone = document.getElementById("dragzone");
 
 dragElement(dragable, dragzone);
+ */
 
-//Minimer 
-const minimise = document.querySelectorAll('.app__btn--minimise');
-const close = document.querySelectorAll('.app__btn--close')
+//Minimer
+const minimise = document.querySelectorAll(".app__btn--minimise");
+const close = document.querySelectorAll(".app__btn--close");
 
-const app = document.querySelector('.app')
-const toggleBrowser = document.querySelector('.--webBrowser')
-const footerApp = document.querySelector('.footer__app')
-const footerText = document.querySelector('.footer__appBody')
-const footerImg = document.querySelector('.footer__appImg')
+const app = document.querySelector(".app");
+const toggleBrowser = document.querySelector(".--webBrowser");
+const footerApp = document.querySelector(".footer__app");
+const footerText = document.querySelector(".footer__appBody");
+const footerImg = document.querySelector(".footer__appImg");
 
-const web = document.querySelector('.--web')
-const icon = document.querySelectorAll('.icons')
+const web = document.querySelector(".--web");
+const icon = document.querySelectorAll(".icons");
 
-const calc = document.querySelector('.--calculator')
+const calc = document.querySelector(".--calculator");
 
 minimise.forEach((minimizeButton) => {
-  minimizeButton.addEventListener('click', () => {
-    toggleBrowser.style.visibility = 'hidden';
-    footerApp.classList.add('--minimized');
-    footerText.textContent = "Internet Explorer"
+  minimizeButton.addEventListener("click", () => {
+    toggleBrowser.style.visibility = "hidden";
+    footerApp.classList.add("--minimized");
+    footerText.textContent = "Internet Explorer";
     footerImg.src = "icons/web.png";
-  })
-})
+  });
+});
 
-web.addEventListener('dblclick', () => { 
-  footerApp.style.visibility = 'visible'; 
-  toggleBrowser.style.visibility = 'visible'; 
-  footerApp.classList.remove('--minimized');
-  footerText.textContent = "Internet Explorer"
+web.addEventListener("dblclick", () => {
+  footerApp.style.visibility = "visible";
+  toggleBrowser.style.visibility = "visible";
+  footerApp.classList.remove("--minimized");
+  footerText.textContent = "Internet Explorer";
   footerImg.src = "icons/web.png";
 });
 
 // Close App fully
 close.forEach((closeButton) => {
-  closeButton.addEventListener('click', () => {
-    footerApp.style.visibility = 'hidden'; 
-    toggleBrowser.style.visibility = 'hidden'; 
-    footerApp.classList.remove('--minimized');
-    footerText.textContent = ""
+  closeButton.addEventListener("click", () => {
+    footerApp.style.visibility = "hidden";
+    toggleBrowser.style.visibility = "hidden";
+    footerApp.classList.remove("--minimized");
+    footerText.textContent = "";
     footerImg.src = "";
-  })
-})
+  });
+});
