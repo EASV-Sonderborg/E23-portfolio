@@ -23,76 +23,56 @@ function closeMenu() {
 }
 
 
+/** typing text */
+const typingText = document.getElementById("typing-text");
 
+function typeText() {
+  typingText.classList.remove("hidden"); // Usuń klasę "hidden" aby pokazać element
 
-
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['Digital Marketing Content Creator','Translating pixels into emotions'], 'text',['#C6AA05','#DF0815']);
-
-function consoleText(words, id, colors) {
-  if (colors === undefined) colors = ['#fff'];
-  var visible = true;
-  var con = document.getElementById('console');
-  var letterCount = 1;
-  var x = 1;
-  var waiting = false;
-  var target = document.getElementById(id)
-  target.setAttribute('style', 'color:' + colors[0])
-  window.setInterval(function() {
-
-    if (letterCount === 0 && waiting === false) {
-      waiting = true;
-      target.innerHTML = words[0].substring(0, letterCount)
-      window.setTimeout(function() {
-        var usedColor = colors.shift();
-        colors.push(usedColor);
-        var usedWord = words.shift();
-        words.push(usedWord);
-        x = 1;
-        target.setAttribute('style', 'color:' + colors[0])
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
-      waiting = true;
-
-      window.setTimeout(function() {
-        x = -1;
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-
-    } else if (waiting === false) {
-      target.innerHTML = words[0].substring(0, letterCount)
-      letterCount += x;
-    }
-  }, 120)
-  window.setInterval(function() {
-    if (visible === true) {
-      con.className = 'console-underscore hidden'
-      visible = false;
-
-    } else {
-      con.className = 'console-underscore'
-
-      visible = true;
-    }
-  }, 400)
+  setTimeout(function() {
+    typingText.style.animation = "none"; // Usuń animację po napisaniu tekstu
+  }, 3000); // Oczekuj 3 sekundy przed zakończeniem animacji
 }
 
+// Wywołaj funkcję typeText po załadowaniu strony
+window.onload = function() {
+  typeText();
+};
+/**----- */
+
+
+/**cursor pointer starts */
+
+const handleMousePos = (e) => {
+  const CURSOR = document.querySelector('#mouse-cursor');
+  const HOVER = document.querySelectorAll('.cursor-hover');
+  const { pageX: posX, pageY: posY } = e;
+
+  const runMouseOver = () => {
+    CURSOR.style.transform = 'scale(4)';
+ ;
+  };
+  HOVER.forEach(hover => hover.addEventListener('mouseenter', runMouseOver));
+
+  const runMouseLeave = () => {
+    CURSOR.style.transform = '';
+ 
+  };
+  HOVER.forEach(hover => hover.addEventListener('mouseleave', runMouseLeave));
+  
+  return (
+    CURSOR.style.left = `${posX - 10}px`,
+    CURSOR.style.top = `${posY - 10}px`  
+  );
+};
+document.addEventListener('mousemove', handleMousePos);
+/** cursor pinter ends */
 
 
 
-/**  */
-const fadeInTextElements = document.querySelectorAll('.fade-in-text');
 
-fadeInTextElements.forEach((element) => {
-  element.style.animation = 'fadeIn 4s forwards';
-});
 
-setTimeout(() => {
-  fadeInTextElements.forEach((element) => {
-    element.style.animation = 'none';
-    element.style.opacity = '1';
-  });
-}, 4000);
+/** copy right in footer */
+const year = document.querySelector('#current-year')
+year.innerHTML= new Date().getFullYear()
+
