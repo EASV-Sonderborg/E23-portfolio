@@ -64,7 +64,7 @@ const calc = document.querySelector('.--calculator')
 
 minimise.forEach((minimizeButton) => {
   minimizeButton.addEventListener('click', () => {
-    toggleBrowser.style.display = 'none';
+    toggleBrowser.style.visibility = 'hidden';
     footerApp.classList.add('--minimized');
     footerText.textContent = "Internet Explorer"
     footerImg.src = "icons/web.png";
