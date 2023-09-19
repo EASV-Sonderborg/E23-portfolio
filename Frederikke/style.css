@@ -38,7 +38,8 @@ p {
 
 body {
     margin: 0;
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+    width: 100%;
 }
 
 a {
