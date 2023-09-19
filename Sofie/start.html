@@ -30,50 +30,36 @@
         <p>Calculator</p>
       </section>
 
-      <!-- for at være ærlig, har lidt issues her, har brug for hjælp :( -->
-      <article class="--calculator" style="display: none">
+      <article class="app makeDraggable --calculatorBrowser">
         <section class="app__header">
           <section class="app__header--description">
             <img class="app__img" src="icons/calculator.png" alt="" />
-            <p>Portfolio - Windows Internet Explorer</p>
+            <p class="app__headerBody"></p>
           </section>
           <section class="app__buttons">
-            <button class="app__btn app__btn--minimise"></button>
-            <button class="app__btn app__btn--maximise"></button>
-            <button class="app__btn app__btn--close"></button>
+            <button class="app__btn --minimise"></button>
+            <button class="app__btn --maximise"></button>
+            <button class="app__btn --close"></button>
           </section>
         </section>
       </article>
 
-      <article class="app --webBrowser makeDraggable" id="dragable">
-        <section class="app__header" id="dragzone">
+      <article class="app makeDraggable --webBrowser">
+        <section class="app__header">
           <section class="app__header--description">
             <img class="app__img" src="icons/web.png" alt="" />
             <p>Portfolio - Windows Internet Explorer</p>
           </section>
           <section class="app__buttons">
-            <button class="app__btn app__btn--minimise"></button>
-            <button class="app__btn app__btn--maximise"></button>
-            <button class="app__btn app__btn--close"></button>
+            <button class="app__btn --minimise"></button>
+            <button class="app__btn --maximise"></button>
+            <button class="app__btn --close"></button>
           </section>
         </section>
-
-        <!-- <section class="searchbar">
-                <section>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </section>
-            </section>
-            <section class="toolbar">
-
-            </section> -->
 
         <article class="browser">
           <article class="hero">
             <img class="hero__img" src="images/thinkitythink.png" alt="" />
-            <!-- <section class="hero__selfie">
-                        <img class="hero__selfieImg" src="images/selfie.png" alt="">
-                    </section> -->
             <section class="bubble left">
               <h1 class="bubble__header">UI Designer & Frontend</h1>
               <h2 class="bubble__header --secondary">Sofie</h2>
@@ -237,9 +223,15 @@
           Start
         </button>
 
-        <section class="footer__app">
-          <img class="footer__appImg" src="icons/web.png" alt="" />
-          <p class="footer__appBody">Internet</p>
+        <section class="footer__area">
+          <section class="footer__app --active">
+            <img class="footer__appImg" src="icons/web.png" alt="" />
+            <p class="footer__appBody">Internet</p>
+          </section>
+          <section class="footer__app footer__calculator">
+            <img class="footer__appImg" src="icons/calculator.png" alt="" />
+            <p class="footer__appBody">Calculator</p>
+          </section>
         </section>
       </section>
 
