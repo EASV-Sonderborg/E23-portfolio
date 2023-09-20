@@ -342,6 +342,8 @@ h1, h2, h3, h4, p, a {
     margin: .5rem;
 }
 .--calculatorBrowser {
+    position: absolute;
+    
     background-color: #E6E8D1;
 
     width: 280px;
@@ -449,7 +451,7 @@ h1, h2, h3, h4, p, a {
 
 .key-large {
     font-weight: bold;
-    
+
     width: 70px;
     height: 28px;
 
