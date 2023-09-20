@@ -426,8 +426,42 @@ a {
     z-index: 2;
   }
 }
+/** line line line */
+.semesterSecond{
+  max-width: 70vw;
+  align-self: center;
+  margin-bottom:var(--spaceXLarge) ;
 
+  
+}
+.semesterIndication{
+  font-size:1.5rem;
+  font-weight: 300;
+  
+ 
+}
+.semesterIndication {
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+  color: #4E4E4E;
+}
 
+.semesterIndication:before, .semesterIndication:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+.semesterIndication:after {
+  margin: 0 -55% 0 .5em;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /** footer footer footer */
 footer{

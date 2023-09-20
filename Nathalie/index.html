@@ -9,7 +9,19 @@
 <body>
     <header>
         <article class="profile">
-            <img class="profile__dias" src="images/Profile.png" alt="">   
+            <img class="profile__images" src="images/Profile.png" alt="">
+            <!-- okay nvm med clip-path
+            <div class="hexagone"></div>
+            <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="round">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />    
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                  </defs>
+              </svg>
+            -->  
         </article>
         <article class="profile__info">
             <h1 class="info__name">Nathalie Henriette Autzen</h1>
@@ -21,24 +33,65 @@
     <main>
         <section class="portfolio">
             <article class="project">
-                <img class="project__image" src="images/project_show_design.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                            <p class="project__text">Tekst</p>
+                            <img class="project__image" src="images/project_show_design.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <img class="project__image" src="images/project_show_coding.png" alt="">
+                <a href="login-landingpage/index.html" target="_blank">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project-coding-login.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <img class="project__image" src="images/project_show_design.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project_show_design.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <img class="project__image" src="images/project_show_design.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project_show_design.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
             <article class="project">
-                <img class="project__image" src="images/project_show_coding.png" alt="">
+                <a href="#">
+                    <button class="custom-btn btn-3">
+                        <span>
+                        <img class="project__image" src="images/project_show_coding.png" alt="">
+                        </span>
+                    </button>
+                </a>
             </article>
         </section>
 
         <section class="skills">
             <h4 class="skills__header">Skills</h4>
+            <article class="skills__programs">
+                <img class="programs__logo" src="images/css_logo.png" alt="">
+                <img class="programs__logo" src="images/html5_logo.png" alt="">
+                <img class="programs__logo" src="images/figma_logo.png" alt="">
+                <img class="programs__logo" src="images/github_logo.png" alt="">
+                <img class="programs__logo" src="images/premier_logo.png" alt="">
+                <img class="programs__logo" src="images/teams_logo.png" alt="">
+                <img class="programs__logo" src="images/trello_logo.png" alt="">
+                <img class="programs__logo" src="images/vscode_logo.png" alt="">
+            </article>
             <p class="skills__programs">
             “Jeg har i løbet af min læren og uddannelse
             fåret forståelse og færdigheder, i at
@@ -74,9 +127,11 @@
             <article>
                 <p>nathalie@autzen.dk</p>
                 <p>+45 60808829</p>
+                <p>© Nathalie Henriette Autzen - All Rights Reserved</p>
             </article>
         </section>
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,290 @@
+body {
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #FFD3AA;
+}
+
+.login__page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #AAE0FF;
+  max-width: 820px;
+  max-height: 664px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+  padding: 30px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.login__form {
+
+}
+.signup__form {
+  display: none;
+}
+
+.input__field {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  border-radius: 25px;
+  background: #f2f2f2;
+  width: 300px;
+  height: 30px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.username {
+  width: 300px;
+  height: 30px;
+}
+
+.password {
+  margin-bottom: 0;
+  height: 30px;
+  border: none;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.pwdWrap {
+  box-sizing: border-box;
+  width: 300px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+}
+
+.fa-eye {
+  margin: 0 6px;
+  cursor: pointer;
+  color: #888;
+}
+
+.fa-eye-slash {
+  margin: 0 6px;
+  cursor: pointer;
+  color: #888;
+  font-size: .95em;
+}
+
+/*
+
+.form input {
+
+  font-family: "Roboto", sans-serif;
+
+  outline: 0;
+
+  background: #f2f2f2;
+
+  width: 300px;
+
+  height: 30px;
+
+  border: 0;
+
+  margin: 0 0 15px;
+
+  padding: 15px;
+
+  box-sizing: border-box;
+
+  font-size: 12px;
+
+}*/
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  color: #000000;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+.profile {
+  max-width: 50%;
+}
+
+.login__error {
+  font-size: large;
+  font-weight: bold;
+}
+
+.input__text {
+  text-align: start;
+  margin-left: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: small;
+}
+
+.login__button {
+  border-radius: 25px;
+}
+.signup__button {
+  border-radius: 25px;
+}
+
+.welcome {
+  font-size: x-large;
+}
+
+.signup__button {
+  border-radius: 25px;
+}
+
+.page__buttons {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login__landingpage {
+  border-radius: 15px 0px 0px 0px;
+}
+
+.signup__landingpage {
+  border-radius: 0px 15px 0px 0px;
+}
+
+.landingpage__button {
+  background-color: #87C8EE;
+}
+
+.--active {
+  background-color: #AAE0FF;
+}
+
+.pwdWrap {
+  display: flex; 
+  align-items: center; 
+  border: none; 
+  background-color: #f2f2f2; 
+  border-radius: 25px;
+}
+
+.fa-eye {
+  margin: 0 6px; 
+  cursor: pointer;
+  color: #888; 
+}
+
+.fa-eye-slash {
+  margin: 0 6px; 
+  cursor: pointer;
+  color: #888; 
+  font-size: .95em; 
+}
+
+.password {
+  margin-bottom: 0; 
+  border: none; 
+}
+
+
+
+/* Welcome */
+.welcome {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.welcome__page {
+  position: relative;
+  z-index: 1;
+  background: #AAE0FF;
+  max-width: 820px;
+  max-height: 664px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+  padding: 30px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.welcome__header {
+  padding-top: 2rem;
+}
+.welcome__cookie {
+  max-width: 100%;
+  border-radius: 15px;
+  display: none;
+}

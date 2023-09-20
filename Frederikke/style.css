@@ -38,7 +38,8 @@ p {
 
 body {
     margin: 0;
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+    width: 100%;
 }
 
 a {
@@ -108,7 +109,7 @@ a {
 
 /* header- hamburger- menu/ stregerne */
 .header .menu-icon .nav-icon {
-    background: black;
+    background: var(--font-headercolor);
     display: block;
     height: 2px;
     width: 18px;
@@ -117,7 +118,7 @@ a {
 }
 
 .header .menu-icon .nav-icon:before {
-    background: black;
+    background: var(--font-headercolor);
     content: "";
     display: block;
     height: 100%;
@@ -128,7 +129,7 @@ a {
 }
 
 .header .menu-icon .nav-icon::after {
-    background: black;
+    background: var(--font-headercolor);
     content: "";
     display: block;
     height: 100%;
