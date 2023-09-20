@@ -174,6 +174,7 @@ calc.addEventListener("dblclick", () => {
   calculator.style.visibility = "visible"
   calcFooter.style.visibility = 'visible';
   calcFooter.classList.add("--active");
+  calcFooter.classList.remove("--minimized")
 })
 
 minimiseButtons.forEach(minimiseButton => {
@@ -187,6 +188,7 @@ minimiseButtons.forEach(minimiseButton => {
    } else if (parentElement.classList.contains("--calculatorBrowser")) {
      calculator.style.visibility = "hidden";
      calcFooter.classList.add('--minimized')
+     calcFooter.classList.remove('--active')
    }
 
    // Close app
@@ -201,7 +203,7 @@ web.addEventListener("dblclick", () => {
   footerApp.style.visibility = "visible";
   toggleBrowser.style.visibility = "visible";
   footerApp.classList.remove("--minimized");
-  footerApp.classList.add('--active')
+  footerApp.classList.add('--active');
 });
 
 // Close App fully

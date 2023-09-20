@@ -13,6 +13,12 @@
     margin: 0;
 }
 
+button {
+    font-family: Tahoma,Verdana,Segoe,sans-serif; 
+    font-size: 11px;
+    font-weight: bold;
+}
+
 h1, h2, h3, h4, p, a {
     font-family: Tahoma,Verdana,Segoe,sans-serif; 
     text-shadow: rgb(0, 0, 0) 1px 1px;
@@ -331,12 +337,145 @@ h1, h2, h3, h4, p, a {
     width: 1000px;
 }
 
+/* - - - - - calculator app - - - - - */
+.calculator__app {
+    margin: .5rem;
+}
 .--calculatorBrowser {
-    width: 260px;
-    height: 260px;
+    background-color: #E6E8D1;
+
+    width: 280px;
+    height: 272px;
 
     visibility: hidden;
 }
+
+.calculator__text {
+    margin-top: .25rem;
+    display: flex;
+    gap: .5rem;
+}
+
+.calculator__body {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.border__text {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.border {
+    margin-bottom: .5rem;
+
+    width: 7px;
+    height: 1.5px;
+
+    background-color: #000;
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4px;
+    align-items: center;
+
+}
+
+.inputfield {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+    text-align: end;
+    padding-right: .2rem;
+
+    width: 100%;
+    height: 22px;
+
+    background-color: #fefefe;
+    border: #888EA4 1px solid;
+
+    margin-bottom: .5rem;
+}
+
+/* - - - - - Key pad - - - - - */
+
+.keypad {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.key-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.key-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 4px;
+
+    width: 100%;
+
+    margin-bottom: .5rem;
+}
+
+.key-column {
+    display: flex;
+    align-items: center;
+}
+
+.key {
+    width: 32px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #41418C;
+
+    cursor: pointer;
+}
+
+.key-large {
+    font-weight: bold;
+    
+    width: 70px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.--action {
+    color: #C90022;
+}
+
+.--m {
+    margin-right: 2.5rem;
+}
+
+.inset-button {
+    width: 25px;
+    height: 25px;
+    box-shadow: inset -1px -1px 4px rgb(250, 250, 250, .5);
+    box-shadow: inset 1px 1px 1px rgb(40, 40, 40, .5);
+    margin-right: 2rem;
+}
+/* - - - - - le end - - - - - */
 
 .app__header {
     background: linear-gradient(45deg, #0066CC, #0083D7, #0066CC);
@@ -355,6 +494,11 @@ h1, h2, h3, h4, p, a {
     color: var(--white);
 
     cursor: default;
+}
+
+.app__headerBody {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
 }
 
 .app__header--description {

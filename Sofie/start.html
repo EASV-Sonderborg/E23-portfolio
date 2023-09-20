@@ -34,7 +34,7 @@
         <section class="app__header">
           <section class="app__header--description">
             <img class="app__img" src="icons/calculator.png" alt="" />
-            <p class="app__headerBody"></p>
+            <p class="app__headerBody">Calculator</p>
           </section>
           <section class="app__buttons">
             <button class="app__btn --minimise"></button>
@@ -42,7 +42,77 @@
             <button class="app__btn --close"></button>
           </section>
         </section>
-      </article>
+
+        <article class="calculator__app">
+          <section class="calculator__text">
+            <p class="calculator__body">Edit</p>
+            <p class="calculator__body">View</p>
+            <p class="calculator__body">Help</p>
+          </section>
+          <section class="border__text">
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+          </section>
+  
+          <form class="form" name="form">
+              <section class="inputfield">
+                  <input type="text" class="field" name="answer">
+              </section>
+        
+                <article class="keypad">
+                  <section class="key-row">
+                    <div class="inset-button"></div>
+                    <button class="key-large --action">Backspace</button>
+                    <input class="key-large --action" type = "button" value = "CE" onclick = "form.answer.value = ' ' " id= "clear" >
+                    <input class="key-large --action" type = "button" value = "C" onclick = "form.answer.value = ' ' " id= "clear" >
+                  </section>
+        
+                  <section class="key-col --m">
+                    <button class="key --action">MC</button>
+                    <button class="key --action">MR</button>
+                    <button class="key --action">MS</button>
+                    <button class="key --action">M+</button>
+                  </section>
+        
+                  <section class="key-col">
+                    <input class="key" type = "button" value = "7" onclick = "form.answer.value += '7' ">
+                    <input class="key" type = "button" value = "4" onclick = "form.answer.value += '4' ">
+                    <input class="key" type = "button" value = "1" onclick = "form.answer.value += '1' ">
+                    <input class="key" type = "button" value = "0" onclick = "form.answer.value += '0' ">
+                  </section>
+        
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "8" onclick = "form.answer.value += '8' ">
+                      <input class="key" type = "button" value = "5" onclick = "form.answer.value += '5' ">
+                      <input class="key" type = "button" value = "2" onclick = "form.answer.value += '2' ">
+                      <input class="key --action" type = "button" value = "+/-" onclick = "form.answer.value += '+/-' ">
+                  </section>
+        
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "9" onclick = "form.answer.value += '9' ">
+                      <input class="key" type = "button" value = "6" onclick = "form.answer.value += '6' ">
+                      <input class="key" type = "button" value = "3" onclick = "form.answer.value += '3' ">
+                      <input class="key dot" type = "button" value = "." onclick = "form.answer.value += '.' ">
+                  </section>
+                  
+                  <section class="key-col">
+                      <input class="key --action" type = "button" value = "/" onclick = "form.answer.value += '/' ">
+                      <input class="key --action" type = "button" value = "*" onclick = "form.answer.value += '*' ">
+                      <input class="key --action" type = "button" value = "-" onclick = "form.answer.value += '-' ">
+                      <input class="key --action" type = "button" value = "+" onclick = "form.answer.value += '+' ">
+                  </section>
+                  
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "sqrt" onclick = "form.answer.value += 'sqrt' ">
+                      <input class="key" type = "button" value = "%" onclick = "form.answer.value += '%' ">
+                      <input class="key" type = "button" value = "1/x" onclick = "form.answer.value += '1/x' ">
+                      <input class="key --action" type = "button" value = "=" onclick = "form.answer.value = eval(form.answer.value) ">
+                  </section>
+                </article>
+          </form>
+          
+        </article>
 
       <article class="app makeDraggable --webBrowser">
         <section class="app__header">
