@@ -42,6 +42,7 @@ body{
   font-family: 'Ysabeau SC', sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  height: 100%;
   
 
 }
@@ -149,12 +150,16 @@ a {
 
 /** intro section/** intro first page  field */ 
 .intro-field{
+
   flex:1;
   display: flex;
   flex-direction: row;
   margin: auto;
   justify-content: center;
   margin-bottom:var(--spaceM);
+  height: 100%;
+
+ 
 }
 
 .intro-name{
@@ -372,7 +377,7 @@ a {
   height: 14vmin;
   object-fit: cover;
   object-position: top;
-  margin-bottom: .6rem;
+  margin-bottom: .9vh;
  
 }
 
@@ -433,6 +438,7 @@ footer{
   margin: 0;
   bottom: 0;
   border-top: none;
+  position:fixed
   
 
 }
