@@ -147,30 +147,47 @@ dragElement(dragable, dragzone);
 const minimiseButtons = document.querySelectorAll(".--minimise");
 const closeButtons = document.querySelectorAll(".--close");
 
-//App vindue
+// App vindue
 const app = document.querySelector(".app");
 
-//Webbrowser
+// Webbrowser
 const toggleBrowser = document.querySelector(".--webBrowser");
 
-//Footer
+// Footer
 const footerArea = document.querySelector(".footer__area");
 const footerApp = document.querySelector(".footer__app");
 const footerText = document.querySelector(".footer__appBody");
 const footerImg = document.querySelector(".footer__appImg");
 const footer = document.querySelector('.footer__start')
 
-//Ikoner
+// Klokkeslæt 
+function updateTime(){
+  const time = document.querySelector('.footer__startTimeBody');
+  const currentTime = new Date();
+
+  const hours = currentTime.getHours();
+  const minutes = currentTime.getMinutes();
+  
+  const formattedTime = `${hours}:${minutes}`;
+  time.innerHTML = formattedTime;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+
+
+// Ikoner
 const web = document.querySelector(".--web");
 const icon = document.querySelectorAll(".icons");
 
-//Calculator
+// Calculator
 const calc = document.querySelector(".--calculator");
 const calculator = document.querySelector('.--calculatorBrowser')
 const calcFooter = document.querySelector('.footer__calculator')
 
 calc.addEventListener("dblclick", () => {
-  footerApp.style.visibility = "visible";
+  // calculator.classList.add('--above')
+  // toggleBrowser.classList.add('--below')
   calculator.style.visibility = "visible"
   calcFooter.style.visibility = 'visible';
   calcFooter.classList.add("--active");
@@ -190,28 +207,31 @@ minimiseButtons.forEach(minimiseButton => {
      calcFooter.classList.add('--minimized')
      calcFooter.classList.remove('--active')
    }
-
-   // Close app
-  //  closeButtons[index].addEventListener("click", () => {
-  //    parentElement.style.visibility = "hidden";
-  //    footerApp.classList.add("--minimized");
-  //  });
   });
 });
 
 web.addEventListener("dblclick", () => {
-  footerApp.style.visibility = "visible";
+  footerApp.style.display = "flex";
   toggleBrowser.style.visibility = "visible";
   footerApp.classList.remove("--minimized");
   footerApp.classList.add('--active');
 });
 
 // Close App fully
-// close.forEach((closeButton) => {
-//   closeButton.addEventListener("click", () => {
-//     footerApp.style.visibility = "hidden";
-//     toggleBrowser.style.visibility = "hidden";
-//     footerApp.classList.remove("--minimized");
-//   });
-// });
+closeButtons.forEach((closeButton) => {
+  closeButton.addEventListener("click", () => {
+    const grandgrandpa = closeButton.parentElement.parentElement.parentElement;
+
+    if (grandgrandpa.classList.contains("--webBrowser")) {
+      toggleBrowser.style.visibility = "hidden";
+      
+      //footerApp.style.visibility = "hidden";
+      footerApp.style.display = "none";
+   } else if (grandgrandpa.classList.contains("--calculatorBrowser")) {
+     calculator.style.visibility = "hidden";
+     
+     calcFooter.style.visibility = "hidden";
+   }
+  });
+});
 

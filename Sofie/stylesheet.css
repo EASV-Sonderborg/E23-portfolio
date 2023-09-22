@@ -275,6 +275,24 @@ h1, h2, h3, h4, p, a {
     color: var(--white);
 }
 
+.footer__startTime {
+    margin-right: .5rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.circle {
+    border-radius: 100%;
+    background-color: rgba(225, 232, 245, 0.25);
+
+    filter: blur(10);
+
+    height: 16px;
+    width: 16px;
+}
+
 .footer__start {
     width: 100%;
     height: 40px;
@@ -283,14 +301,19 @@ h1, h2, h3, h4, p, a {
 
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .footer__startBtn {
-    width: 100px;
+    width: 120px;
     height: 40px;
 
-    border: outset 5px #2D7830;
+    /* border: outset 5px #2D7830; */
+    border:none; 
+    
+    box-shadow: inset -2px -2px 20px rgb(32, 90, 28);
+    box-shadow: inset 1px 1px 25px rgb(32, 150, 68);
+
     border-bottom-right-radius: .8rem;
     border-top-right-radius: .8rem;
 
@@ -307,8 +330,8 @@ h1, h2, h3, h4, p, a {
 }
 
 .footer__startBtn:active {
-    border: inset 5px rgb(133, 192, 133, 0.1);
-    box-shadow: inset 2px 2px 18px rgb(133, 190, 130);
+    box-shadow: inset -4px -4px 20px rgb(21, 73, 18);
+    box-shadow: inset 4px 4px 25px rgb(21, 73, 18);
 }
 
 .footer__startImg {
@@ -342,8 +365,6 @@ h1, h2, h3, h4, p, a {
     margin: .5rem;
 }
 .--calculatorBrowser {
-    position: absolute;
-    
     background-color: #E6E8D1;
 
     width: 280px;
@@ -809,4 +830,14 @@ h1, h2, h3, h4, p, a {
 .about__body {
     margin-bottom: .25rem;
     text-shadow: none;
+}
+
+/* - - - - Modifier til at lægge på nye browser, så den lægger først og den forrige lægger bagerst */
+
+.--above {
+    z-index: 1;
+}
+
+.--below {
+    z-index: -1;
 }
