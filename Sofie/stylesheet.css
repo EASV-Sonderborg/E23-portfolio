@@ -231,9 +231,9 @@ h1, h2, h3, h4, p, a {
 }
 
 .footer__app {
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
-    margin-left: .25rem;
+    margin-left: .5rem;
     padding-left: .5rem;
 
     height: 40px;
@@ -305,14 +305,15 @@ h1, h2, h3, h4, p, a {
 }
 
 .footer__startBtn {
-    width: 120px;
+    width: 130px;
     height: 40px;
 
-    /* border: outset 5px #2D7830; */
-    border:none; 
+    padding: .5rem;
+    
+    border: none; 
     
     box-shadow: inset -2px -2px 20px rgb(32, 90, 28);
-    box-shadow: inset 1px 1px 25px rgb(32, 150, 68);
+    box-shadow: inset 1px 1px 25px rgb(32, 90, 28);
 
     border-bottom-right-radius: .8rem;
     border-top-right-radius: .8rem;
@@ -546,7 +547,7 @@ h1, h2, h3, h4, p, a {
 }
 
 .app__btn {
-    margin-right: 1px;
+    /* margin-right: 1px; */
     position: relative;
     width: 22px;
     height: 22px;
