@@ -34,7 +34,41 @@ loginButton.addEventListener('click', async (event) => {
 
 
 
-/* Toggle password eye */
+
+
+/* Toggle password eye - Ny kode */
+const eyeIconLogin = document.querySelector('.eyeIconLogin');
+const passwordLogin = document.querySelector('.passwordLogin'); // Vælg inputfeltet Login
+const eyeIconSignup = document.querySelector('.eyeIconSignup');
+const passwordSignup = document.querySelector('.passwordSignup'); // Vælg inputfeltet Login
+
+let password = true;
+
+eyeIconLogin.addEventListener('click', function () {
+    if (password) {
+        passwordLogin.setAttribute('type', 'text');
+        eyeIconLogin.classList.remove('fa-eye-slash');
+        eyeIconLogin.classList.add('fa-eye');
+    } else {
+        passwordLogin.setAttribute('type', 'password');
+        eyeIconLogin.classList.remove('fa-eye');
+        eyeIconLogin.classList.add('fa-eye-slash');
+    }
+    password = !password;
+});
+eyeIconSignup.addEventListener('click', function () {
+    if (password) {
+        passwordSignup.setAttribute('type', 'text');
+        eyeIconSignup.classList.remove('fa-eye-slash');
+        eyeIconSignup.classList.add('fa-eye');
+    } else {
+        passwordSignup.setAttribute('type', 'password');
+        eyeIconSignup.classList.remove('fa-eye');
+        eyeIconSignup.classList.add('fa-eye-slash');
+    }
+    password = !password;
+});
+/* Gamle kode
 const visToggle = document.querySelector('.eyeIcon');
 const input = document.querySelector('.password'); // Vælg inputfeltet
 
@@ -51,7 +85,7 @@ visToggle.addEventListener('click', function () {
         visToggle.classList.add('fa-eye');
     }
     password = !password;
-});
+});*/
 
 
 

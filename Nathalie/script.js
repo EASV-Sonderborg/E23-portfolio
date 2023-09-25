@@ -3,7 +3,7 @@
 const changingImages = document.querySelectorAll('.profile__images');
 
 // En liste med de forskellige billedkilder, du vil skifte mellem
-const imageSources = ['images/Profile.png', 'images/full_profile.png', 'images/profile-picture.png'];
+const imageSources = ['images/swoosh-profile.png', 'images/swoosh-profile3.png', 'images/swoosh-profile2.png', 'images/swoosh-profile4.png'];
 
 // En variabel til at spore det aktuelle billede for hver klasse
 const currentImageIndexes = Array(changingImages.length).fill(0);

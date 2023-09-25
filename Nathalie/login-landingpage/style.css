@@ -27,9 +27,11 @@ body {
 }
 
 .login__form {
+  padding-top: 30px;
 
 }
 .signup__form {
+  padding-top: 30px;
   display: none;
 }
 
@@ -202,6 +204,12 @@ body {
   border-radius: 25px;
 }
 
+.forgotPassword {
+  font-size: small;
+}
+
+
+
 .welcome {
   font-size: x-large;
 }
@@ -211,7 +219,7 @@ body {
 }
 
 .page__buttons {
-  margin-bottom: 30px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -287,4 +295,24 @@ body {
   max-width: 100%;
   border-radius: 15px;
   display: none;
+}
+
+
+
+
+.back__arrow {
+  max-width: 5%;
+  float: left;
+  margin-left: 1rem;
+}
+.forgot__text {
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.forgot__header {
+  font-size: x-large;
+}
+.locked {
+  max-width: 25%;
 }
