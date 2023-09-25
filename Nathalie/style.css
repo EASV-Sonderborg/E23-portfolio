@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-
 body {
     background-color: #EEF6EE;
     margin: 0;
@@ -226,4 +225,50 @@ div[class] {
 .fineme__some {
     max-width: 5%;
     padding: .5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .profile__images {
+        max-width: 95%;
+    }
+    .info__name {
+        font-size: var(--fontSizeXLarge);
+        margin: 0.2rem;
+    }
+
+
+    .project {
+        padding: 1rem;
+    }
+    .project__image {
+        max-width: 30vh;
+        border-radius: 15%;
+    }
+
+
+    .skills {
+        text-align: center;
+        background-image: url('images/stars_background.png');
+        background-repeat: repeat;
+        background-size: 100%;
+        background-position: center;
+        margin: 2rem;
+    }
+    .skills__header {
+        font-size: var(--fontSizeLarge);
+        padding-top: .5rem;
+    }
+    .skills__programs {
+        width: 90%;
+        padding: 10px;
+    }
+    .skills__experience {
+        width: 90%;
+        padding: 10px;
+    }
 }
