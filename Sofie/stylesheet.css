@@ -219,8 +219,6 @@ h1, h2, h3, h4, p, a {
 }
 
 .footer__area {
-    margin-left: 1.5rem;
-
     width: 100%;
 
     display: flex;    
@@ -269,6 +267,7 @@ h1, h2, h3, h4, p, a {
 .footer__startAppArea {
     display: flex;
     gap: 2rem;
+    /* flex-grow: 1; */
 }
 
 .footer__startTimeBody, .footer__appBody {
@@ -305,10 +304,10 @@ h1, h2, h3, h4, p, a {
 }
 
 .footer__startBtn {
-    width: 130px;
+    width: fit-content;
     height: 40px;
 
-    padding: .5rem;
+    padding-right: 1.5rem;
     
     border: none; 
     
