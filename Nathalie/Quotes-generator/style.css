@@ -1,0 +1,48 @@
+body {
+    background-color: #B6AAFF;
+}
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: #AAE0FF;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 95%;
+    height: 85vh;                      /* 100vh */
+    
+    display: flex;
+}
+.quotes {
+    background-color: #b7e5ff;
+    border-radius: 15px;
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+.quotes p {
+    font-size: 1.5rem;
+}
+.quotes h6 {
+    font-size: 1rem;
+}
+.btn__container {
+    text-align: center;
+}
+
+@media(max-width: 480px) {
+    .quotes p {
+        font-size: 1.2rem;
+    }
+    .quotes h6 {
+        font-size: .8rem;
+    }
+}
