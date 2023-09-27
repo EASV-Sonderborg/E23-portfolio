@@ -40,9 +40,9 @@
 }
 
 .pictureMe-img {
-    max-width: 95%;
-    max-height: 95%;
-    border-radius: 50%;
+    max-width: auto;
+    max-height: auto;
+    border-radius: 10%;
 
     grid-column: 2;
     grid-row: 4;
