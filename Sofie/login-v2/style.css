@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&family=Merriweather:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #8AB7FC;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* - - - - - Wavy thing, top and bottom - - - - - */
+
+/* - - - - - Top - - - - - - */
+.custom-shape-divider-top-1694355421 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1694355421 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 250px;
+}
+
+.custom-shape-divider-top-1694355421 .shape-fill {
+    fill: #FC8AB7;
+}
+
+/* - - - - - Bottom - - - - - - */
+
+.custom-shape-divider-bottom-1694355493 {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1694355493 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 250px;
+}
+
+.custom-shape-divider-bottom-1694355493 .shape-fill {
+    fill: #FC8AB7;
+} 
+
+/* - - - - - Content - - - - - - */
+main {
+    padding: 1rem;
+
+    width: 1000px;
+    height: 650px;
+
+    background-color: rgb(240, 240, 240, .25);
+
+    border-radius: 20px;
+}
+
+.frontpage {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 20% 60%;
+}
+
+h1 {
+    grid-column: span 3;
+    text-align: center;
+
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.login {
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    grid-column: 3;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    margin: auto;
+    grid-column: 2;
+    grid-row: 2;
+
+    background: linear-gradient(45deg,rgb(240, 240, 240, .1),rgb(240, 240, 240, .25),rgb(240, 240, 240, .25),rgb(240, 240, 240, .1));
+    border-radius: 50%;
+    height: 400px;
+    width: 4px;
+}
+
+button {
+    padding: 12px 24px;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(137, 135, 135, 0.5);
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+}
+
+button:active{
+    box-shadow: none;
+}
+
+.--loginBtn {
+    background-color: #FC8AB7;
+    border: #FC8AB7 solid;
+}
+
+.--signupBtn {
+    border: #FC8AB7 solid 4px;
+    background-color: rgb(240, 250, 240, .25);
+    backdrop-filter: blur(20px);
+}
+
+/* - - - - - Form Login - - - - - */
+.loginArea {
+    display: flex;
+    align-items: center;
+}
+
+.loginArea__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+
+    grid-area: login;
+}
+
+.two-cl-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+    "loginheader loginheader"
+    "login img"
+    ;
+}
+
+.loginHeader {
+    grid-area: loginheader;
+
+    font-family: 'Merriweather', serif;
+}
+
+.loginArea__img {
+    grid-area: img;
+    width: 100%;
+}
+
+input {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+    padding-left: .25rem;
+
+    height: 34px;
+    width: 350px;
+
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid #DDD;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+label {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.icon {
+    margin-right: .5rem;
+
+    color: rgba(40, 40, 40, 0.8);
+}
+
+.icon__link {
+    text-decoration: none;
+    color: black;
+    font-size: 44px;
+}
+
+.password__check {
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    width: 100%;
+
+    margin-bottom: 2rem;
+}
+
+form .fa-eye {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: #888; 
+
+    position: absolute;
+    right: 4px;
+}
+
+form .fa-eye-slash {
+    margin: 0 6px; 
+    cursor: pointer;
+    color: #888; 
+    font-size: .95em; 
+
+    position: absolute;
+    right: 4px;
+}
+
+input#password {
+    width: 100%;  
+    margin: 0;  
+}
+
+.submit {
+    width: 356px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #FC8AB7;
+
+    margin-bottom: 2rem;
+}
+
+.submitArea--link {
+    font-weight: 500;
+    color: rgb(5, 5, 255);
+}
+
+/* - - - - - Sign Up - - - - - */
+

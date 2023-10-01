@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&family=VT323&display=swap');
+
+:root {
+    /* Farver */
+    --primary: #656565;
+    --secondary: #fefefe;
+    --tertiary: #FFD580;
+
+    --neon-blue: #00DBDE;
+    --neon-pink: #FC00FF;
+
+   /* Font */
+   --regular: 400;
+   --bold: 600;
+   --headline: 32px;
+   --body: 22px;
+   
+   /* gradient */
+   --primary-gradient: linear-gradient(150deg,#465548, #59665a, #6b776d);
+   --secondary-gradient: linear-gradient(45deg, var(--neon-blue)10%, var(--neon-pink) 90%);
+   --tertiary-gradient: linear-gradient(45deg,#00DBDE, rgb(252, 0, 255), #00DBDE);
+   
+   /* Sizes */
+   --xxxsmall: calc(var(--medium)/8);
+   --xxsmall: calc(var(--medium)/4);
+   --xsmall: calc(var(--medium)/2);
+   --small: calc(var(--medium)/1.5); 
+   --medium: 1rem;
+   --large: calc(var(--medium)*1.5);
+   --xlarge: calc(var(--medium)*2.5);
+   --xxlarge: calc(var(--medium)*3.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    background: var(--primary-gradient);
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--xxlarge);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Salsa', cursive;
+}
+
+p {
+    margin-top: var(--small);
+
+    font-family: 'VT323', monospace;
+    font-size: var(--body);
+   
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--medium);
+}
+
+.timeline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--xsmall);
+}
+
+.icon {
+    width: var(--xxlarge);
+    height: var(--xxlarge);
+
+    margin-bottom: var(--xsmall);
+}
+
+.timeline__line {
+    position: relative;
+    
+    border-radius: var(--xxsmall);
+    height: var(--xxsmall);
+    width: 130%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline__circle {
+    position: absolute;
+
+    border-radius: var(--xsmall);
+    width: var(--large);
+    height: var(--large);
+}
+
+.--default {
+    background-color: var(--neon-blue);
+}
+
+.--active{
+    background: var(--tertiary-gradient);
+    z-index: 1;
+}
+
+.--activeCircle {
+    background: var(--neon-pink);
+}

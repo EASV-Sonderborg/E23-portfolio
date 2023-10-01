@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Kontaktformular</title>
+</head>
+<body>
+    <article class="contact">
+        <section class="contact__text">
+
+            <h1 class="contact__header">Kontakt mig</h1>
+            <p>Kom i kontakt med mig og jeg vil vende tilbage hurtigst muligt!</p>
+
+            <img src="" alt="">
+        </section>
+
+        <!-- <form method="post" action="process.php" class="contact__inputs" id="contact"> -->
+        <form action="thanks.html" class="contact__inputs" id="contact">
+            
+            <section class="input-field">
+                <input type="text" name="fullname" id="fullname" pattern="[a-zA-Z]+" required>
+                <label for="fullname">Fornavn</label>
+            </section>
+            
+            <section class="input-field">
+                <input type="text" name="lastname" id="lastname" required>
+                <label for="lastname">Efternavn</label>
+            </section>
+            
+            <section class="input-field">
+                <input type="email" name="email" id="email" required>
+                <label for="email">E-mail</label>
+            </section>
+
+            <section class="input-field">
+                <input type="text" name="comment" id="comment" required>
+                <label for="comment">Kommentar</label>
+            </section>
+
+            <input type="submit" name="button" value="Submit" id="button">
+        </form>
+    </article>
+</body>
+</html>

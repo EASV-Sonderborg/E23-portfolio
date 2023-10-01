@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="darkmode.css" />
+    <title>Forside</title>
+  </head>
+  <body class="background">
+    <main class="main">
+      <section class="icons --trash">
+        <img class="icons__images" src="icons/emptytrash.png" alt="" />
+        <p>Trash</p>
+      </section>
+      <section class="icons --web">
+        <img class="icons__images" src="icons/web.png" alt="" />
+        <p>Internet Explorer</p>
+      </section>
+      <section class="icons --notepad">
+        <img class="icons__images" src="icons/notepad.png" alt="" />
+        <p>Notepad</p>
+      </section>
+      <section class="icons --folder">
+        <img class="icons__images" src="icons/folder.png" alt="" />
+        <p>random folder</p>
+      </section>
+      <section class="icons --calculator">
+        <img class="icons__images" src="icons/calculator.png" alt="" />
+        <p>Calculator</p>
+      </section>
+
+      <article class="app makeDraggable --calculatorBrowser">
+        <section class="app__header">
+          <section class="app__header--description">
+            <img class="app__img" src="icons/calculator.png" alt="" />
+            <p class="app__headerBody">Calculator</p>
+          </section>
+          <section class="app__buttons">
+            <button class="app__btn --minimise"></button>
+            <button class="app__btn --maximise"></button>
+            <button class="app__btn --close"></button>
+          </section>
+        </section>
+
+        <article class="calculator__app">
+          <section class="calculator__text">
+            <p class="calculator__body">Edit</p>
+            <p class="calculator__body">View</p>
+            <p class="calculator__body">Help</p>
+          </section>
+          <section class="border__text">
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+          </section>
+  
+          <form class="form" name="form">
+              <section class="inputfield">
+                  <input type="text" class="field" name="answer">
+              </section>
+        
+                <article class="keypad">
+                  <section class="key-row">
+                    <div class="inset-button"></div>
+                    <button class="key-large --action">Backspace</button>
+                    <input class="key-large --action" type = "button" value = "CE" onclick = "form.answer.value = ' ' " id= "clear" >
+                    <input class="key-large --action" type = "button" value = "C" onclick = "form.answer.value = ' ' " id= "clear" >
+                  </section>
+        
+                  <section class="key-col --m">
+                    <button class="key --action">MC</button>
+                    <button class="key --action">MR</button>
+                    <button class="key --action">MS</button>
+                    <button class="key --action">M+</button>
+                  </section>
+        
+                  <section class="key-col">
+                    <input class="key" type = "button" value = "7" onclick = "form.answer.value += '7' ">
+                    <input class="key" type = "button" value = "4" onclick = "form.answer.value += '4' ">
+                    <input class="key" type = "button" value = "1" onclick = "form.answer.value += '1' ">
+                    <input class="key" type = "button" value = "0" onclick = "form.answer.value += '0' ">
+                  </section>
+        
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "8" onclick = "form.answer.value += '8' ">
+                      <input class="key" type = "button" value = "5" onclick = "form.answer.value += '5' ">
+                      <input class="key" type = "button" value = "2" onclick = "form.answer.value += '2' ">
+                      <input class="key --action" type = "button" value = "+/-" onclick = "form.answer.value += '+/-' ">
+                  </section>
+        
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "9" onclick = "form.answer.value += '9' ">
+                      <input class="key" type = "button" value = "6" onclick = "form.answer.value += '6' ">
+                      <input class="key" type = "button" value = "3" onclick = "form.answer.value += '3' ">
+                      <input class="key dot" type = "button" value = "." onclick = "form.answer.value += '.' ">
+                  </section>
+                  
+                  <section class="key-col">
+                      <input class="key --action" type = "button" value = "/" onclick = "form.answer.value += '/' ">
+                      <input class="key --action" type = "button" value = "*" onclick = "form.answer.value += '*' ">
+                      <input class="key --action" type = "button" value = "-" onclick = "form.answer.value += '-' ">
+                      <input class="key --action" type = "button" value = "+" onclick = "form.answer.value += '+' ">
+                  </section>
+                  
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "sqrt" onclick = "form.answer.value += 'sqrt' ">
+                      <input class="key" type = "button" value = "%" onclick = "form.answer.value += '%' ">
+                      <input class="key" type = "button" value = "1/x" onclick = "form.answer.value += '1/x' ">
+                      <input class="key --action" type = "button" value = "=" onclick = "form.answer.value = eval(form.answer.value) ">
+                  </section>
+                </article>
+          </form>
+          
+        </article>
+
+      <article class="app makeDraggable --webBrowser">
+        <section class="app__header">
+          <section class="app__header--description">
+            <img class="app__img" src="icons/web.png" alt="" />
+            <p>Portfolio - Windows Internet Explorer</p>
+          </section>
+          <section class="app__buttons">
+            <button class="app__btn --minimise"></button>
+            <button class="app__btn --maximise"></button>
+            <button class="app__btn --close"></button>
+          </section>
+        </section>
+
+        <article class="browser">
+          <article class="hero">
+            <img class="hero__img" src="images/thinkitythink.png" alt="" />
+            <section class="bubble left">
+              <h1 class="bubble__header">UI Designer & Frontend</h1>
+              <h2 class="bubble__header --secondary">Sofie</h2>
+            </section>
+          </article>
+          <article class="about">
+            <section class="about__section about__me">
+              <h3 class="--header">Om mig</h3>
+              <p class="--text">Hej!</p>
+            </section>
+            <article class="about__section about__projects">
+              <h3 class="--header">Projekter</h3>
+              <p class="--text">
+                Hej! Du kan tjekke mine projekter ud her. Du kan også trykke på
+                knapperne nedenunder for at komme hen til dem.
+              </p>
+
+              <nav class="projects__navbar">
+                <a
+                  class="projects__navbarItem--link projects__navbarItem"
+                  href="#login"
+                  >Login</a
+                >
+                <a
+                  class="projects__navbarItem--link projects__navbarItem"
+                  href="#Skeleton-Loading"
+                  >Skeleton Loading Animation</a
+                >
+              </nav>
+
+              <section id="login">
+                <h3 class="projects__header">Login/Signup</h3>
+
+                <article class="projects__ideation projects">
+                  <h4>Ideation</h4>
+                  <p class="projects__ideation--body">
+                    Jeg startede op med at bygge forskellige versioner op i
+                    Figma, som kan ses nedenunder
+                  </p>
+                  <section class="projects__gallery">
+                    <img
+                      class="projects__galleryImg"
+                      src="images/Version-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="projects__galleryImg"
+                      src="images/Version-7.png"
+                      alt=""
+                    />
+                    <img
+                      class="projects__galleryImg"
+                      src="images/Version-8.png"
+                      alt=""
+                    />
+                    <img
+                      class="projects__galleryImg"
+                      src="images/Version-8-Signup.png"
+                      alt=""
+                    />
+                  </section>
+                </article>
+
+                <article class="projects__codepen projects">
+                  <h4>Version 1 - Codepen</h4>
+                  <p>blob</p>
+                  <p
+                    class="codepen"
+                    data-height="500"
+                    data-default-tab="no"
+                    data-slug-hash="VwqbaNa"
+                    data-user="LlamaInWonderland"
+                    style="
+                      height: 500px;
+                      box-sizing: border-box;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border: 2px solid;
+                      margin: 1em 0;
+                      padding: 1em;
+                    "
+                  >
+                    <span
+                      >See the Pen
+                      <a
+                        href="https://codepen.io/LlamaInWonderland/pen/VwqbaNa"
+                      >
+                        login/signup
+                      </a>
+                      by Sofie (<a href="https://codepen.io/LlamaInWonderland"
+                        >@LlamaInWonderland</a
+                      >) on <a href="https://codepen.io">CodePen</a>.</span
+                    >
+                  </p>
+                  <script
+                    async
+                    src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+                  ></script>
+                </article>
+
+                <article class="projects__VTwo projects">
+                  <h4>Version 2</h4>
+                  <p>blob 2</p>
+                </article>
+
+                <article class="projects">
+                  <h4>Udbytte</h4>
+                  <p>
+                    Jeg har arbejdet med accesibility i input/labels, og hvordan
+                    disse skal sættes op for at følge standarderne, så alle kan
+                    være med moden.
+                  </p>
+                  <p>
+                    Et eksempel vil være ikonerne. Ikoner vil
+                    <em>oftest</em> have den samme semantiske betydning, og man
+                    vil kunne navigere sig rundt med hjælp af dem.
+                  </p>
+                  <p>
+                    Et andet eksempel vil være selve knapperne med en klar og
+                    tydelig call to action tekst. "Login"/"Signup"/"Opret konto"
+                    - brugeren vil ikke være i tvivl
+                  </p>
+                  <p>
+                    om hvad de skal trykke på for at komme videre - da dette
+                    også vil være noget, som de vil være vant til at se på andre
+                    sider.
+                  </p>
+                </article>
+
+                <article class="github">
+                  <h4>Github - begge versioner ligger her</h4>
+                  <a href="https://github.com/SofieHedemann/signup-login.git"
+                    >Filerne på Github</a
+                  >
+                </article>
+              </section>
+
+              <section id="Skeleton-Loading">
+                <h3 class="projects__header">Skeleton Loading Animation</h3>
+                <img
+                  class="projects__galleryImg"
+                  src="images/Skeleton-loading.gif"
+                  alt=""
+                />
+                <p>
+                  En loading screen før siden har loadet alt indhold ind vil
+                  hjælpe brugeren med at der er indhold på vej.
+                </p>
+              </section>
+            </article>
+          </article>
+        </article>
+      </article>
+    </main>
+
+    <!-- ret dette til så der bliver brugt en footer i stedet -->
+    <footer class="footer__start">
+      <section class="footer__startAppArea">
+        <button class="footer__startBtn">
+          <img class="footer__startImg" src="icons/start-here.png" alt="" />
+          Start
+        </button>
+
+        <section class="footer__area">
+          <section class="footer__app --active">
+            <img class="footer__appImg" src="icons/web.png" alt="" />
+            <p class="footer__appBody">Internet</p>
+          </section>
+          <section class="footer__app footer__calculator">
+            <img class="footer__appImg" src="icons/calculator.png" alt="" />
+            <p class="footer__appBody">Calculator</p>
+          </section>
+        </section>
+      </section>
+
+      <section class="footer__startTime">
+        <div class="circle"></div>
+        <p class="footer__startTimeBody">Klokken</p>
+      </section>
+    </footer>
+
+    <script src="draggability.js" defer></script>
+    <script src="resizeWidthHeight.js" defer></script>
+    <script src="start.js" defer></script>
+  </body>
+</html>

@@ -1,41 +1,129 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
-<body class="login__screen">
-    <header class="login__bars"></header>
-    
-    <main class="login__area">
-        <section class="login__areaMW">
-            <img class="login__areaIcon" src="icons/start-here.png" alt="">
-            <h3 class="login__area--small">Microsoft</h3>
-            <h1 class="login__area--large">Windows</h1>
-            <h2 class="login__area--medium">XP</h2>
-            <p class="login__areaBody">To begin, click your user name</p>
-        </section>
-        <section class="login__area--divider"></section>
-        <section class="login__areaUser">
-            <a class="login__user" href="start.html">
-                <button class="login__userBtn">
-                    <img class="login__userImg" src="images/moomin.png" alt="">
-                    <p>Guest Moomin Troll</p>
-                </button>
-            </a>
-        </section>
+<body>
+    <main>
+        <article class="hero">
+            <section class="intro">
+                <h1 >Sofie</h1>
+                <h2 class="line-1 anim-typewriter">UI Design & Engineer</h2>
+            </section>
+            <section class="bubble left">
+                <p class="bubble--text">Code with Creativity 💜</p>
+              </section>
+        </article>
     </main>
-    
-    <footer class="login__bars">
-        <section class="system-suspend">
-            <img src="icons/system-suspend.png" alt="">
-            <p>Turn off computer</p>
-        </section>
-        <p class="footer__text">All rights reserved&#8482;</p>
-    </footer>
 
-    <script src="resizeWidthHeight.js"></script>
+    <h2 class="project__headline">Projekter</h2>
+    <article class="projects">
+        
+        <article class="project">
+            <a class="box" href="windows-xp/index.html" target="_blank">
+                <img class="box__image" src="images/windows-xp.png" alt="">
+                <section class="ribbon">
+                    <span>HTML, CSS, JS</span>
+                </section>
+            </a>
+            <section class="project__about">
+                <h3 class="project__header">Windows XP</h3>
+                <p class="project__body">Du kan finde mere projeket på Github eller trykke dig ind på projeket via billedet</p>
+                <a class="github" href="#" target="_blank">Github</a>
+            </section>
+        </article>
+
+        <article class="project">
+            <a class="box" href="checkbox-animation/index.html" target="_blank">
+                <img class="box__image" src="images/checkbox.png" alt="">
+                <section class="ribbon">
+                    <span>Animation</span>
+                </section>
+            </a>
+            <section class="project__about">
+                <h3 class="project__header">Checkbox animation</h3>
+                <p class="project__body">Du kan finde mere projeket på Github eller trykke dig ind på projeket via billedet</p>
+                <a class="github" href="#" target="_blank">Github</a>
+            </section>
+        </article>
+
+        <article class="project">
+            <a class="box" href="timeline/index.html" target="_blank">
+                <img class="box__image" src="images/timeline.png" alt="">
+                <section class="ribbon">
+                    <span>HTML, CSS, JS</span>
+                </section>
+            </a>
+            <section class="project__about">
+                <h3 class="project__header">Timeline</h3>
+                <p class="project__body">Du kan finde mere projeket på Github eller trykke dig ind på projeket via billedet</p>
+                <a class="github" href="#" target="_blank">Github</a>
+            </section>
+        </article>
+
+        <article class="project">
+            <a class="box" href="kontaktformular/index.html" target="_blank">
+                <img class="box__image" src="images/kontakt-formular.png" alt="">
+                <section class="ribbon">
+                    <span>Accessibility</span>
+                </section>
+            </a>
+            <section class="project__about">
+                <h3 class="project__header">Kontakt formular</h3>
+                <p class="project__body">Du kan finde mere projeket på Github eller trykke dig ind på projeket via billedet</p>
+                <a class="github" href="#" target="_blank">Github</a>
+            </section>
+        </article>
+
+        <article class="project">
+            <a class="box" href="login-v1/index.html" target="_blank">
+                <img class="box__image" src="images/login-v1.png" alt="">
+                <section class="ribbon">
+                    <span>Accessibility</span>
+                </section>
+            </a>
+            <section class="project__about">
+                <h3 class="project__header">Login V1</h3>
+                <p class="project__body">Du kan finde mere projeket på Github eller trykke dig ind på projeket via billedet</p>
+                <a class="github" href="#" target="_blank">Github</a>
+            </section>
+        </article>
+
+        <article class="project">
+            <a class="box" href="login-v2/index.html" target="_blank">
+                <img class="box__image" src="images/login-v2.png" alt="">
+                <section class="ribbon">
+                    <span>Accessibility</span>
+                </section>
+            </a>
+            <section class="project__about">
+                <h3 class="project__header">Login V2</h3>
+                <p class="project__body">Du kan finde mere projeket på Github eller trykke dig ind på projeket via billedet</p>
+                <a class="github" href="#" target="_blank">Github</a>
+            </section>
+        </article>
+
+        <article class="project">
+            <a class="box" href="skeleton-loading/index.html" target="_blank">
+                <img class="box__image" src="images/skeletonloading.png" alt="">
+                <section class="ribbon">
+                    <span>Animation</span>
+                </section>
+            </a>
+            <section class="project__about">
+                <h3 class="project__header">Skeleton Loading</h3>
+                <p class="project__body">Du kan finde mere projeket på Github eller trykke dig ind på projeket via billedet</p>
+                <a class="github" href="#" target="_blank">Github</a>
+            </section>
+        </article>
+        
+    </article>
+
+    <footer>
+        <small>All Rights Reserved - Sofie Hedemann™️</small>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9ad229eaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav active">
+            <ul class="nav-menu">
+                <li class="nav-item">hi</li>
+                <li class="nav-item">hi</li>
+                <li class="nav-item">hi</li>    
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <form class="search-form" action="#">
+            <input type="text" placeholder="search..." name="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <section class="profile">
+            <button><i class="icon fa-solid fa-video"></i></button>
+            <button><i class="icon fa-solid fa-bell"></i></button>
+            <img class="account-img" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2786&q=80" alt="">
+        </section>
+    </header>
+    <main class="grid-m"> 
+        <aside>
+            <ul>
+                <li class="icons --active">
+                    <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block;"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg> 
+                    Home
+                </li>
+                <li class="icons">
+                    <svg height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg> Shorts</li>
+                <li class="icons">
+                    <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block;;"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+                    Subscriptions
+                </li>
+                <li class="icons">
+                    <svg height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block;"><path d="M10 9.35 15 12l-5 2.65zM12 7a5 5 0 105 5 5 5 0 00-5-5m0-1a6 6 0 11-6 6 6 6 0 016-6zm0-3a9 9 0 109 9 9 9 0 00-9-9m0-1A10 10 0 112 12 10 10 0 0112 2z"></path></svg> 
+                    Youtube Music
+                </li>
+                <li class="icons">
+                    <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg> 
+                    Library
+                </li>
+            </ul>
+        </aside>
+        
+        <article class="filter">
+            <button class="filter__btn --activeBtn">All</button>
+            <button class="filter__btn">Disney</button>
+            <button class="filter__btn">True Crime</button>
+            <button class="filter__btn">Indie Soap</button>
+            <button class="filter__btn">DIY</button>
+            <button class="filter__btn">Disney</button>
+            <button class="filter__btn">True Crime</button>
+            <button class="filter__btn">Indie Soap</button>
+            <button class="filter__btn">DIY</button>
+            <button class="filter__btn">Indie Soap</button>
+            <button class="filter__btn">DIY</button>
+        </article>
+
+        <article class="grid-videos">
+            <section class="video-container">
+                <a class="thumbnail-link" href="#">
+                    <img class='thumbnail'></img>
+                </a>
+                <section class="grid-xs">
+                  <img class='pfp'></img>
+                  <h2 class='name'></h2>
+                  <h5 class='artist'></h5>
+                </section>
+            </section> 
+        </article>
+
+        <article class="skeleton-grid">
+            <section class="skeleton">
+                <a class="skeleton--link" href="#">
+                    <div class="skeleton--img"> </div>
+                </a>
+                <section class="skeleton-grid-xs">
+                    <div class="skeleton--pfp"></div>
+                    <h2 class="skeleton--name"></h2>
+                    <h5 class="skeleton--artist"></h5>
+                </section>
+            </section>
+        </article>
+    </main>
+
+    <script src="skeleton-loading.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>
