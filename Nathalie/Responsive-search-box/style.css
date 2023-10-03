@@ -1,7 +1,7 @@
 body {
     width: 95%;
     height: 90vh;
-    background-color: lightcoral;
+    background-color: #FFD3AA;
     align-items: center;
     justify-content: center;
 
@@ -15,7 +15,7 @@ body {
     position: relative;
     height: 50px;
     max-width: 50px;
-    background: red;
+    background: #96DEF8;
     margin: auto;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
@@ -44,11 +44,11 @@ body {
     border-radius: 25px;
     text-align: center;
     line-height: 50px;
-    color: lightcoral;
+    color: #96DEF8;
     font-size: 20px;
 }
 #check:checked ~ .search__box .icon {
-    background: lightcoral;
+    background: #96DEF8;
     color: white;
     width: 60px;
     border-radius: 0 25px 25px 0;
