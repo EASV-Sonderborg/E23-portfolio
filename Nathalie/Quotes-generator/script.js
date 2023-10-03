@@ -8,11 +8,11 @@ function generate() {
         "- Aaron Lauritsen" : '"Lifes trials will test you, and shape you, but don’t let them change who you are."'
     }
 
-    var authors = Object.keys(quotes);
+    const authors = Object.keys(quotes);
 
-    var author = authors[Math.floor(Math.random() * authors.length)];
+    const author = authors[Math.floor(Math.random() * authors.length)];
 
-    var quote = quotes[author];
+    const quote = quotes[author];
 
     document.getElementById("quote").innerHTML = quote;
     document.getElementById("author").innerHTML = author;

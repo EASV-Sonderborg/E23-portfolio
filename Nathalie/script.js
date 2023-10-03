@@ -21,3 +21,11 @@ function changeImages() {
 
 // Sæt intervallet til at ændre billederne hvert 4. sekund (4000 millisekunder)
 setInterval(changeImages, 4000);
+
+
+
+
+/* Ribbon på produktioner */
+const productBtn = document.querySelectorAll('.btn-3');
+const ProductText = document.querySelectorAll('.project__text');
+const ribbon = document.querySelectorAll('.ribbon');

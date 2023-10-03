@@ -128,10 +128,11 @@ div[class] {
     border-radius: 15%;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
     outline: none;
+    position: relative;
 }
+
 .btn-3 {
     padding: 0;
     border: none;
@@ -188,12 +189,44 @@ div[class] {
 .btn-3 span:hover:after {
     width: 100%;
 }
-.project__image:hover {
-    filter: blur(2px);
+.btn-3:hover .project__image {
+    filter: blur(4px);
 }
 .project__text {
     display: none;
-    
+    position: absolute;
+    z-index: 1;
+    color: black;
+    font-size: var(--fontSizeMedium);
+    font-weight: bold;
+    top: 50%; /* Placer elementets top på 50% af knappens højde */
+    left: 50%; /* Placer elementets venstre kant på 50% af knappens bredde */
+    transform: translate(-50%, -50%); /* Centrer elementet både horisontalt og vertikalt */
+    margin: 0;
+}
+
+.btn-3:hover .project__text {
+    display: block;
+}
+
+
+.ribbon {
+    --f: 10px; /* control the folded part*/
+    --r: 10px; /* control the ribbon shape */
+    --t: 15px; /* the top offset */
+
+    position: absolute;
+    inset: var(--t) calc(-1*var(--f)) auto auto;
+    padding: 5px 10px var(--f) calc(10px + var(--r));
+    clip-path: polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%, calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)), var(--r) calc(50% - var(--f)/2));
+    background: var(--accent-color);
+    box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+
+    height: 22px;
+    transition: opacity 0.2s ease;
+}
+.btn-3:hover .ribbon {
+    opacity: 0;
 }
 
 
