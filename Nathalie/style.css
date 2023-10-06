@@ -74,11 +74,11 @@ div[class] {
     margin: 0.2rem;
 }
 .info__carrer {
-    font-size: var(--fontSizeLarge);
+    font-size: var(--fontSizeXLarge);
     margin: 0.2rem;
 }
 .info__tagline {
-    font-size: var(--fontSizeMedium);
+    font-size: var(--fontSizeLarge);
     margin: 0.2rem;
 }
 
