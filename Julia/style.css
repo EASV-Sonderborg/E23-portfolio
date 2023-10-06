@@ -20,6 +20,7 @@
   --spaceM:calc(var(--spaceDefault)*3);   /**48 */
   --spaceL:calc(var(--spaceDefault)*4);  /**64 */
   --spaceXL:calc(var(--spaceDefault)*5); /** */
+  --spaceHudgeMargin:calc(var(--spaceDefault)*8);
 
 
   --dark-blue: #1F4782;
@@ -95,6 +96,7 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   top: 2rem;
   left: 0;
   background-color:var(--tetriaryColor);
+  flex: 1;
 
 
   
@@ -127,6 +129,8 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   color: var(--secondaryColor);
   font-family: 'Khand', sans-serif;
   color: var(--quaternaryColor);
+  flex: auto;
+
  
 
 
@@ -286,7 +290,7 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
 
   }
 }
-/** dots line */
+/** dots- line  dots line  dots line  dots line */
 .content-creator-paragraph {
   font-size: var(--fontTwo);
   position: relative;
@@ -296,6 +300,7 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   overflow: hidden;
   text-align: center;
   font-weight:300;
+  
   
 }
 
@@ -318,9 +323,11 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
 .dots-right {
   margin: 0 -55% 0 .5em;
 }
+.indent{
+  text-indent: 10%;
+}
 
-
-/** About me ---> About me */
+/** About me  ---> About me ---> About me */
 .about{
   display: grid;
   grid-template-columns: 30% auto;
@@ -341,6 +348,7 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
 }
 .about-me-headline{
   font-size: var(--fontThree);
+ 
 }
 .about-me-headline::first-letter {
   font-size: 5rem;
@@ -353,22 +361,26 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   margin-bottom:22px;
 }
 
-/** Ends ---> About-me Ends ---> About-meEnds  */
+/** Ends About-me---> About-me Ends ---> About-meEnds  */
 
 
 
-/* Card container */
+/* Card  landings gallery -->container  Card landingsgallery -->container  */
 .blog-card {
+ 
   display: flex;
   flex-direction: column;
   margin:2vh auto;
-  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
   line-height: 1.45;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
   z-index: 0;
-  margin-bottom: 2.5vh;
+  margin-bottom: 4rem;
+ 
+ 
+ 
+
 }
 
 
@@ -386,6 +398,7 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   position: relative;
   z-index: 0;
   height: 200px;
+  opacity: 86%;
 
 }
 
@@ -399,6 +412,8 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   background-size: cover;
   background-position: center;
   transition: transform .2s;
+
+
 
 }
 
@@ -415,7 +430,7 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   line-height: 1;
   margin: 0;
   font-size: 1.7rem;
-  color: var(--tetriaryColor);
+  color: var(--secondaryColor);
 }
 
 .blog-card .description h2 {
@@ -479,45 +494,59 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
 
 /*
 .alt{
+ 
 
-}*/
-
-
-
-
-/** last */
+}
+*/
 
 
+
+
+
+/**  Radio gallery-landings gallery-landings gallery-landings  */
+.headline-gallery-landings{
+ font-family: Poppins, sans-serif;
+ font-weight: 600;
+ font-size:1.7rem;
+ color: var(--secondaryColor);
+ margin-bottom: 2rem;
+
+
+
+
+}
 .general-container {
   display: flex;
   height: 30rem;
   margin: 0 auto;
   max-width: 100%;
-  width: 70rem;
+  margin-bottom: var(--spaceHudgeMargin);
 }
+
 
 .radio {
   display: none;
 }
 
 .content {
-  background: var(--white)
-  url(img/abc.png)
-  100% / cover no-repeat;
+  background:
+  url(img/lp-4.png);
+  background-size: cover;
+  max-width: 100%;
+  background-position: center;
   border-radius: 3rem;
   cursor: pointer;
   flex: 1;
   margin-right: 0.8rem;
   overflow: hidden;
   position: relative;
-  object-fit: cover;
   transition: all 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
 }
 
-/*
-.icon {
+/**.icon {
   align-items: center;
-  background-color: var(--white);
+background-image: url(img/logo.png);
   border-radius: 50%;
   bottom: 1rem;
   color: var(--golden-tainoi);
@@ -528,24 +557,33 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   left: 1.1rem;
   position: absolute;
   width: 2.5rem;
-}*/
+} */
+
 
 .content:nth-of-type(2) {
-  background-image: url('https://images.unsplash.com/photo-1444384851176-6e23071c6127?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80');
+  background-image: url(img/lp-3.png);
+  background-size: cover;
 }
 
 .content:nth-of-type(3) {
-  background-image: url('https://images.unsplash.com/photo-1482406611936-43ea538e39d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2110&q=80');
+  background-image: url(img/lp-black-2.png);
 }
 
 .content:nth-of-type(4) {
-  background-image: url('https://images.unsplash.com/photo-1483663167873-0cfcc893b78c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2096&q=80');
+  background-image: url(img/lp-black.png);
 }
 
 .content:nth-of-type(5) {
-  background-image: url('https://images.unsplash.com/photo-1475116127127-e3ce09ee84e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+  background-image: url(img/lp-6.png);
   margin-LEFT: 0;
+  background-size: ;
 }
+.content:nth-of-type(6) {
+  background-image: url(img/lp-5.png);
+  margin-LEFT: 0;
+
+}
+
 
 .content:nth-of-type(2) .icon {
   color: var(--dark-gray);
@@ -562,6 +600,10 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
 .content:nth-of-type(5) .icon {
   color: var(--golden);
 }
+.content:nth-of-type(6) .icon {
+  color: var(--golden);
+}
+
 
 .card-title {
   bottom: 1.2rem;
@@ -597,10 +639,35 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
   transform: translateX(0);
 }
 
+/** END gallery-landings  END gallery-landings  END gallery-landings  */
+/** Big Landings Contaier */
+.landings-wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1.4rem;
+  margin-bottom: var(--spaceHudgeMargin);
 
 
-/** Instagram */
+}
+.item-landing{
+  max-width: 100%;
+}
+
+.lego-lp{
+  object-fit: cover;
+  grid-row: span 3;
+
+
+
+}
+
+
+/** Instagram  Instagram   Instagram    Instagram   Instagram   */
+.headline-instgram-opslag {
+  margin-bottom: var(--spaceXs);
+}
 .instagram-images{
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap:8px;
@@ -660,9 +727,56 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
 }
 
 
+.elena-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  margin-bottom: var(--spaceM);
 
 
 
+}
+
+.elena-item{
+  max-width: 100%;
+
+}
+.elena-item:hover {
+  border:  dotted 6px var(--tetriaryColor);
+  transform: scale(1.05); /* Przykładowa zmiana rozmiaru */
+  transition: opacity 0.3s ease, transform 0.3s ease;}
+
+.headline-elena-banners{
+  margin-bottom: var(--spaceXs);
+}
+
+.elena-wrapper-all-videos{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: var(--spaceM);
+
+}
+ .video-container-elena {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporcje 16:9 */
+    height: 0;
+    overflow: hidden;
+    
+  }
+
+  .video-container-elena iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .elena-film-sand-kassen{
+    margin-bottom: var(--spaceXs);
+  }
 
 
 
@@ -716,4 +830,7 @@ background: linear-gradient(to LEFT, #313131, #101010); /* W3C, IE 10+/ Edge, Fi
 }
 
 /**Photo by <a href="https://unsplash.com/@campaign_creators?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Campaign Creators</a> on <a href="https://unsplash.com/photos/yktK2qaiVHI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
-   
+
+
+/*  mraketing: Photo by <a href="https://unsplash.com/@hostreviews?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stephen Phillips - Hostreviews.co.uk</a> on <a href="https://unsplash.com/photos/shr_Xn8S8QU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+  
