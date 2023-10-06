@@ -235,3 +235,14 @@ closeButtons.forEach((closeButton) => {
   });
 });
 
+// Footer app start 
+const start = document.querySelector('.start__app');
+const footerbtn = document.querySelector('.footer__startBtn')
+
+footerbtn.addEventListener('click', () => {
+  start.style.visibility = 'visible';
+}) 
+
+footerbtn.addEventListener('dblclick', () => {
+  start.style.visibility = 'hidden';
+})
