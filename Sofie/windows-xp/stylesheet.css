@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+
 :root {
     /* Colors */
     --blue: #5A7EDC;
@@ -22,6 +24,10 @@ button {
 h1, h2, h3, h4, p, a {
     font-family: Tahoma,Verdana,Segoe,sans-serif; 
     text-shadow: rgb(0, 0, 0) 1px 1px;
+}
+
+h5 {
+    align-self: center;
 }
 
 /* .drag {
@@ -621,216 +627,82 @@ h1, h2, h3, h4, p, a {
     background-color: white;
 }
 
-.browser {
-    margin-top: .25rem;
-
-    overflow-y: scroll;
-}
-
-.hero {
-    width: 100%;
-
-    position: relative;
-}
-
-.hero__selfie {
-    position: absolute;
-    top: 45px;
-    left: 16px;
-
-    border-radius: 12px;
-    box-shadow: -1px 4px 20px 6px rgb(0, 0, 0, .25);
-    padding: .25rem;
-    width: 160px;
-    height: 320px;
-    background-color: rgb(250, 250, 250, .25);
-}
-
-.hero__img {
-    width: 100%;
-    object-fit: cover;
-    height: 545px;
-}
-
-/* Source: https://codepen.io/t_afif/pen/eYMbrJN */
-.bubble {
-    --r: 25px; /* the radius */
-    --t: 30px; /* the size of the tail */
-    
-    max-width: 200px;
-    padding: calc(2*var(--r)/3);
-    -webkit-mask: 
-      radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
-        var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
-      conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
-        calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
-      radial-gradient(50% 50%,#000 98%,#0000 101%) 
-        0 0/var(--r) var(--r) space padding-box;
-    background: rgb(64, 156, 255);
-
-    box-shadow: -1px 4px 20px 6px rgb(0, 0, 0, .25);
-
-    position: absolute;
-    top: 150px;
-    right: 16px;
-  }
-
-  .left {
-    --_d: 0%;
-    border-left: var(--t) solid #0000;
-    margin-right: var(--t);
-  }
-
-  /* - - - - - - - - */
+/* Google */
 
 
- /* - - - - - - - - */
-
-.bubble__header {
-    color: var(--white);
-    text-shadow: none
-}
-
-.about {
-    margin-left: .5rem;
-    margin-bottom: 2.5rem;
-}
-
-.about__section{
-    padding: .5rem;
-
-}
-
-/* .about__me {
-    background-color: red;
-} */
-
-.--header {
-    text-shadow: none;
-}
-
-.--text {
-    text-shadow: none;
-}
-
-/* .about__contact {
-    
-} */
-
-.--mail {
-    
-
-    margin-bottom: .5rem;
-}
-
-.--phone {
-    
-
-    margin-bottom: .5rem;
-}
-
-.--phone p {
-    text-shadow: none;
-}
-
-.--mail p {
-    text-shadow: none;
-}
-
-.linkedinLink {
-    text-decoration: none;
-    color: var(--black);
-    text-shadow: none;
-
-    border-bottom: 2px solid var(--black);
-}
-
-/* .--linkedin {
-    
-} */
-
-.--linkedin img {
-    width: 48px;
-}
-
-.--mail img {
-    width: 48px;
-}
-
-.--phone img {
-    width: 48px;
-}
-
-.about__projects h4,h3, a, p {
-    text-shadow: none;
-}
-
-.projects__gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
-}
-
-.projects__galleryImg {
-    width: 100%;
-}
-
-.projects__header {
-    margin-bottom: .5rem;
-}
-
-.github {
-    margin-bottom: 2.5rem;
-}
-
-.projects__ideation--body {
-    margin-bottom: .25rem;
-}
-
-.cp_embed_wrapper {
-    margin-bottom: 1.25rem;
-}
-
-.projects__navbar {
-    margin-top: 1.5rem;
-    margin-bottom: 1.25rem;
-}
-
-.projects__navbarItem {
-    background-color: rgb(112, 158, 104);
-    border-radius: 6px;
-    width: fit-content;
-    padding: 8px 16px;
-
-    margin-top: .5rem;
-}
-
-.projects__navbarItem--link {
-    text-decoration: none;
-    color: #fefefe;
-}
-
-.projects {
+.google {
+    height: 90%;
     display: flex;
     flex-direction: column;
-    gap: .25rem;
-
-    margin-bottom: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-/*.about__hobby {
+span {
+    font-size: 44px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.--blue {
+    color: #4285F4;
+}
+
+.--red {
+    color: #DB4437;
+}
+
+.--yellow {
+    color: #F4B400;
+}
+
+.--green {
+    color: #0F9D58;
+}
+
+.google__search {
+
+}
+
+.search {
+    outline: #dfe1e5;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
     
-} */
+    width: 338px;
+    max-width: 584px;
 
-.about__header {
-    margin-bottom: .25rem;
-    text-shadow: none;
+    height: 33px;
+
+    padding-left: .5rem;
 }
 
-.about__body {
-    margin-bottom: .25rem;
-    text-shadow: none;
+.search:focus{
+    box-shadow: 0 1px 4px rgba(32,33,36,.28);
 }
+
+.google__btn {
+    background-color: #E9EAEB;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
 
 /* - - - - Modifier til at lægge på nye browser, så den lægger først og den forrige lægger bagerst */
 
@@ -840,4 +712,126 @@ h1, h2, h3, h4, p, a {
 
 .--below {
     z-index: -1;
+}
+
+/* - - - - - - - Start - - - - - - - */
+
+a {
+    text-decoration: none;
+    color: #fefefe;
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.start__app {
+    visibility: hidden;
+
+    position: absolute;
+    bottom:40px;
+    width: 400px;
+}
+
+.start__appsArea {
+    display: flex;
+}
+
+.user {
+    width: 400px;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    background: linear-gradient(#0066CC, #0083D7, #0066CC);
+
+    display: flex;
+    align-items: center;
+
+}
+
+.user__image {
+    width: 54px;
+    height: 54px;
+    margin-left: .5rem;
+}
+
+.apps {
+    background-color: #fefefe;
+    width: 200px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app__icon {
+    margin-left: .25rem;
+
+    display: flex;
+    gap: .5rem;
+
+    margin-bottom: .5rem;
+}
+
+.app__iconImg {
+    width: 28px;
+    height: 28px;
+}
+
+.app__iconBody {
+    font-weight: bold;
+    text-shadow: none;
+
+}
+
+.apps__icons {
+    margin-top: .5rem;
+}
+
+.app__programmes {
+    margin-left: .5rem;
+}
+
+.apps__all {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .5rem;
+}
+
+.folders {
+    display: flex;
+    flex-direction: column;
+    background-color: #D3E5FA;
+    width: 200px;
+    height: 400px;
+}
+
+.suspend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .25rem;
+
+    width: 100%;
+    height: 50px;
+
+    background: linear-gradient(#0066CC, #0083D7, #0066CC);
+
+}
+
+.suspend__body {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    margin-right: 0.5rem;
+    color: #fefefe;
+}
+
+.suspend__image {
+    width: 28px;
+    height: 28px;
+
+    cursor: pointer;
 }
