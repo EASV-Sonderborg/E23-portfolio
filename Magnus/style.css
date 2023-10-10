@@ -1,11 +1,4 @@
-:root{
-    --firstColor:#FDFFF7;
-    --secondColor:#50514F;
-    --thirdColor:#59FFA0;
-    --fourthColor:#B4ADEA;
-    --fithColor:#FFED65;
-    --sixColor:#e3e5de;
-}
+@import url(customprop.css);
 
 body{
     margin: 1rem;

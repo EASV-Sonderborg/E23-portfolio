@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelink.css">
+    <title>Links</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="headerText">Magnus Lützen</h1>
+        <img class="headerImage" src="imgs/headshot.jpg" alt="My headshot">
+        <button class="headerButton">Portfolio</button>
+    </header>
+
+    <body class="body">
+        <h1 class="headline"></h1>
+        
+
+    </body>
+    <footer class="footer">
+
+    </footer>
+
+
+</body>
+
+</html>

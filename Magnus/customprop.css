@@ -1,0 +1,21 @@
+:root{
+    --firstColor:#FDFFF7;
+    --secondColor:#50514F;
+    --thirdColor:#59FFA0;
+    --fourthColor:#B4ADEA;
+    --fithColor:#FFED65;
+    --sixColor:#e3e5de;
+
+
+    --maintext: 3rem;
+    --secondtext: 2rem;
+    --breadtext: 1.5rem;
+
+
+    --tinyspacing:0.5rem;
+    --smallspacing:1rem;
+    --midspacing:1.5rem;
+    --bigspacing:2rem;
+    
+    
+}
