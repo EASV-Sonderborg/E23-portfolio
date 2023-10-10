@@ -7,6 +7,24 @@
     <title>Nathalie Autzen</title>
 </head>
 <body>
+    <section class="loading__screen">
+        
+        <section class="loading__container">
+            <article class="load-3">
+                <img class="line" src="images/Airballoon.svg" alt="">   
+            </article>
+            <article class="load-3">
+                <span class="shadow"></span> 
+            </article>
+            <!--
+            <article  class="load-3">
+                <span class="shadow"></span>   
+            </article>
+            -->
+        </section>
+        <h4 class="loading__text">Loading...</h4>
+    </section>
+    
     <header>
         <article class="profile">
             <img class="profile__images" src="images/swoosh-profile.png" alt="">
@@ -136,6 +154,12 @@
             </section>
     </footer>
     
+    <script>
+        const loadingScreen = document.querySelector('.loading__screen');
+        setTimeout(() => {
+        loadingScreen.style.display = 'none';
+        }, 3500);
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

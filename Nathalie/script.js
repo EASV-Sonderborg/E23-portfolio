@@ -21,3 +21,11 @@ function changeImages() {
 
 // Sæt intervallet til at ændre billederne hvert 4. sekund (4000 millisekunder)
 setInterval(changeImages, 4000);
+
+
+/*
+const loadingScreen = document.querySelector('.loading__screen');
+setTimeout(() => {
+  loadingScreen.style.display = 'none';
+}, 4000);
+*/
