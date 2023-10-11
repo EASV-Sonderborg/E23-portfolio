@@ -128,8 +128,8 @@ body {
 }
 
 .portfolio-img {
-    max-height: auto;
-    max-width: auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .projects__img {
