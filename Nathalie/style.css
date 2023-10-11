@@ -45,7 +45,7 @@ footer {
 }
 
 
-/**/
+/* Loading screen */
 .loading__screen {
     padding-top: 4rem;
     width: 100%;
@@ -79,7 +79,7 @@ footer {
 }
 .loading__container {
     width: 100%;
-    height: 18rem;
+    height: 20rem;
 }
 .load-3 {
     display: flex;
@@ -96,7 +96,7 @@ footer {
     animation-delay: 0.45s;
 }
 @keyframes loadingC {
-    0 {
+    0% {
       transform: translate(0, 0);
     }
     50% {
@@ -131,14 +131,7 @@ footer {
         margin: 0 5%;
     }
 }
-
-
-
-
-
-
-
-
+/* */
 
 
 
@@ -165,6 +158,329 @@ div[class] {
     clip-path: polygon(0% 0%, 0% 95%, 8% 91%, 18% 87%, 28% 86%, 37% 89%, 45% 93%, 54% 93%, 65% 90%, 70% 84%, 76% 74%, 75% 61%, 72% 49%, 73% 36%, 78% 26%, 83% 17%, 89% 7%, 90% 0%);
 }
 */
+
+
+
+
+/*  ----  Baggrunds animationer  ----  */
+
+/* Stjerner */
+.random__starPlacement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: absolute;
+    z-index: -1;
+}
+
+.load-wrapp {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--background-color);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.load-wrapp p {
+    padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+    margin-right: 0;
+}
+
+.star1 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+.star_1 {
+    grid-column: 3;
+    grid-row: 3;
+}
+.star2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+}
+.star_2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.star3 {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+}
+.star_3 {
+    grid-column: 6;
+    grid-row: 2;
+}
+.star4 {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+}
+.star_4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+.star5 {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+}
+.star_5 {
+    grid-column: 7;
+    grid-row: 3;
+}
+
+.load-8 .star1 {
+    animation: star1 2.5s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star2 {
+    animation: star2 1.9s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star3 {
+    animation: star3 1.9s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star4 {
+    animation: star4 1.9s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star5 {
+    animation: star5 1.9s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+@keyframes star1 {
+    0% {
+      width: 5px;
+    }
+    50% {
+      width: 35px;
+      padding: 4px;
+    }
+    100% {
+      width: 5px;
+    }
+}
+@keyframes star2 {
+    0% {
+      width: 2px;
+    }
+    50% {
+      width: 15px;
+      padding: 4px;
+    }
+    100% {
+      width: 2px;
+    }
+}
+@keyframes star3 {
+    0% {
+      width: 20px;
+    }
+    50% {
+      width: 35px;
+      padding: 4px;
+    }
+    100% {
+      width: 20px;
+    }
+}
+@keyframes star4 {
+    0% {
+      width: 30px;
+    }
+    50% {
+      width: 55px;
+      padding: 4px;
+    }
+    100% {
+      width: 30px;
+    }
+}
+@keyframes star5 {
+    0% {
+      width: 20px;
+    }
+    50% {
+      width: 35px;
+      padding: 4px;
+    }
+    100% {
+      width: 20px;
+    }
+}
+
+
+
+
+/* Skyer */
+.sky__placement {
+    position: absolute;
+    z-index: -1;
+}
+.square-holder {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.square__top {
+    width: 160px;
+    height: 160px;
+    border-radius: 4px;
+}
+.load-7 .square__top {
+    animation: square__top 35s cubic-bezier(0.90, 0.80, 0.80, 0.90) infinite;
+}
+@keyframes square__top {
+    0% {
+      transform: translate(10px, 0);
+    }
+    50% {
+      transform: translate(900px, 0);
+    }
+    100% {
+      transform: translate(10px, 0);
+    }
+}
+
+.square__middle {
+    width: 130px;
+    height: 130px;
+    border-radius: 4px;
+}
+.load-7 .square__middle {
+    animation: square__middle 41s cubic-bezier(0.90, 0.80, 0.80, 0.90) infinite;
+}
+@keyframes square__middle {
+    0% {
+      transform: translate(900px, 0);
+    }
+    50% {
+      transform: translate(10px, 0);
+    }
+    100% {
+      transform: translate(900px, 0);
+    }
+}
+
+.square__bottom {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+}
+.load-7 .square__bottom {
+    animation: square__bottom 30s cubic-bezier(0.90, 0.80, 0.80, 0.90) infinite;
+}
+@keyframes square__bottom {
+    0% {
+      transform: translate(10px, 0);
+    }
+    50% {
+      transform: translate(900px, 0);
+    }
+    100% {
+      transform: translate(10px, 0);
+    }
+}
+
+
+
+
+/* Bølge */
+.flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+  
+.content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: #96DEF8;
+}
+/* Animation */
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
 .profile__images {
     max-width: 100%;
 }
@@ -187,7 +503,7 @@ div[class] {
 
 .skills {
     text-align: center;
-    background-image: url('images/stars_background.png');
+
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

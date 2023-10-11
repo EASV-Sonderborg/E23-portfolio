@@ -1,9 +1,69 @@
-/* @media screen and (min-width: 310px) {
+@media screen and (min-width: 310px) and (max-width: 430px) {
     .hero {
         background-image: url(images/think1.png);
+        background-size: cover;
+
+        display: flex;
+        justify-content: flex-start;
+
+        padding-top: 1rem;
     }
 
     .bubble {
         display: none;
     }
-} */
+
+    .intro {
+        margin-left: 2rem;
+    }
+
+    .hero__header {
+        font-size: 28px;
+      }
+      
+      .hero__subheading {
+        font-size: 18px;
+      }
+
+      .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 750px) {
+    .bubble {
+    display: none;    
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .hero {
+        background-image: url(images/think1.png);
+        background-size: cover;
+
+        display: flex;
+        justify-content: flex-start;
+
+        /* padding-top: 1rem; */
+    }
+
+    .intro {
+        margin-left: 2rem;
+    }
+
+    .hero__header {
+        font-size: 32px;
+      }
+      
+      .hero__subheading {
+        font-size: 18px;
+      }
+}
