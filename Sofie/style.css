@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /* :root {
 
 } */
@@ -35,13 +37,25 @@ body {
 }
 
 .intro {
-    margin-left: 5rem;
+    margin-left: 2rem;
     color: #fefefe;
+}
+
+.hero__header {
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+.hero__subheading {
+  font-family: 'Merienda', cursive;
+  font-size: 22px;
 }
 
 /* Speech bubble  */
 /* Source: https://codepen.io/t_afif/pen/eYMbrJN */
 .bubble {
+  visibility: visible;
+
     --r: 25px; /* the radius */
     --t: 30px; /* the size of the tail */
     
@@ -59,8 +73,8 @@ body {
     box-shadow: -1px 4px 20px 6px rgb(0, 0, 0, .25);
 
     position: absolute;
-    top: 180px;
-    right: 25px;
+    top: 220px;
+    right: 10px;
   }
 
   .left {
@@ -84,8 +98,7 @@ body {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: .75rem;
+    gap: 1rem;
 }
 
 .project {
@@ -97,7 +110,6 @@ body {
     backdrop-filter: blur(20);
     
     width: 100%;
-    height: fit-content;
 
     color: #fefefe;
   }
@@ -251,7 +263,6 @@ body {
     width: fit-content;
    
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
     
     white-space: nowrap;
     overflow: hidden;
