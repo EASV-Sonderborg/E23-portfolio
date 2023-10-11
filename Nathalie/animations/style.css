@@ -23,7 +23,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    scroll-snap-type: x mandatory; /* tilføjet for opgave B */
+    scroll-snap-type: x mandatory;
 }
     
 .slide-arrow {
@@ -99,13 +99,13 @@ body {
     height: 100%;
 }
 .load__heart .heart:nth-last-child(1) {
-    animation: loadingC 1.9s 0.3s linear infinite;
+    animation: hearth 1.5s 0.3s linear infinite;
 }
 .load__heart .heart:nth-last-child(2) {
-    animation: loadingC 1.9s 0.6s linear infinite;
+    animation: hearth 1.5s 0.6s linear infinite;
 }
 .load__heart .heart:nth-last-child(3) {
-    animation: loadingC 1.9s 0.9s linear infinite;
+    animation: hearth 1.5s 0.9s linear infinite;
 }
 .heart {
     display: inline-block;
@@ -115,8 +115,8 @@ body {
     background-color: #4b9cdb;
     clip-path: polygon(48% 27%, 57% 18%, 72% 15%, 81% 21%, 83% 32%, 48% 68%, 15% 33%, 18% 21%, 27% 15%, 40% 17%);
 }
-@keyframes load__heart {
-    0 {
+@keyframes hearth {
+    0% {
       transform: translate(0, 0);
     }
     50% {
@@ -155,13 +155,13 @@ body {
     margin: 0 auto;
 }
 .load-4 .ring-1 {
-    animation: loadingD 2.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+    animation: gears 2.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
 }
 .l-4 {
     animation-delay: 0.84s;
 }
-@keyframes loadingD {
-    0 {
+@keyframes gears {
+    0% {
       transform: rotate(0deg);
     }
     50% {
@@ -194,13 +194,13 @@ body {
     width: 180px;
 }
 .load-3 .line:nth-last-child(1) {
-    animation: loadingC 2.9s 0.2s linear infinite;
+    animation: airballoon 2.9s 0.2s linear infinite;
 }
 .l-3 {
     animation-delay: 0.45s;
 }
-@keyframes loadingC {
-    0 {
+@keyframes airballoon {
+    0% {
       transform: translate(0, 0);
     }
     50% {
@@ -240,3 +240,151 @@ body {
 
 
 
+/* Stjerner */
+.load-wrapp__stars {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.load-wrapp p {
+    padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+    margin-right: 0;
+}
+
+.star1 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+.star2 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}
+.star3 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+}
+.star4 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+.star5 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+}
+
+.load-8 .star1 {
+    animation: star1 2.5s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star2 {
+    animation: star2 2.9s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star3 {
+    animation: star3 2.9s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star4 {
+    animation: star4 1.6s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+.load-8 .star5 {
+    animation: star5 2.9s cubic-bezier(0.1, 0.3, 0.83, 0.67) infinite;
+}
+@keyframes star1 {
+    0% {
+      width: 20px;
+    }
+    50% {
+      width: 60px;
+      padding: 4px;
+    }
+    100% {
+      width: 20px;
+    }
+}
+@keyframes star2 {
+    0% {
+        width: 20px;
+        opacity: 25%;
+    }
+    25% {
+        width: 30px;
+        opacity: 75%;
+    }
+    50% {
+        width: 40px;
+        opacity: 100%;
+    }
+    75% {
+        width: 30px;
+        opacity: 75%;
+    }
+    100% {
+        width: 20px;
+        opacity: 25%;
+    }
+}
+@keyframes star3 {
+    0% {
+      width: 40px;
+    }
+    50% {
+      width: 90px;
+      padding: 4px;
+    }
+    100% {
+      width: 40px;
+    }
+}
+@keyframes star4 {
+    0% {
+      width: 20px;
+    }
+    50% {
+      width: 70px;
+      padding: 4px;
+    }
+    100% {
+      width: 20px;
+    }
+}
+@keyframes star5 {
+    0% {
+        width: 20px;
+        opacity: 25%;
+    }
+    25% {
+        width: 40px;
+        opacity: 75%;
+    }
+    50% {
+        width: 60px;
+        opacity: 100%;
+    }
+    75% {
+        width: 40px;
+        opacity: 75%;
+    }
+    100% {
+        width: 20px;
+        opacity: 25%;
+    }
+}
