@@ -116,10 +116,58 @@ body {
     top: 0;
 }
 
-.portfolio-img {
-    height: 100%;
-    width: 100%;
+.myWork__projects {
+    display: flex;
+    flex-direction: row;
 }
+
+.projetcsImg {
+    padding-top: 15px;
+    width: fit-content;
+}
+
+.projects__video-instagram {
+    display: flex;
+    gap: 5;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.projects__video-tiktok {
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.projects__img-me {
+    margin-left: var(--spaceLarge);
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    height: 600px;
+}
+
+.projetcsImg-me {
+    padding-top: 15px;
+    width: fit-content;
+}
+
+.product {
+    margin-left: var(--spaceLarge);
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    height: 400px;
+}
+
+.productImg {
+    padding-top: 15px;
+    width: fit-content;
+}
+
+
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
