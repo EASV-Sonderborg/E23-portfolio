@@ -23,14 +23,17 @@
 }
 
 h2 {
+    font-family: "canva studentfont";
     color: var(--font-headercolor);
 }
 
 h3 {
+    font-family: "canva studentfont";
     color: var(--font-labelcolor);
 }
 
 p {
+    font-family: "canva studentfont";
     color: var(--font-pcolor);
     line-height: 25px;
 }

@@ -115,6 +115,12 @@ body {
     top: 0;
 }
 
+.myWork-header {
+    font-family: "canva studentfont";
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio-img {
     max-height: 100%;
     max-width: 100%;
