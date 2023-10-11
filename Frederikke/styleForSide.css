@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    width: auto;
 }
 
 /* header */
@@ -116,10 +115,78 @@ body {
     top: 0;
 }
 
-.portfolio-img {
-    height: 100%;
-    width: 100%;
+.myWork-header {
+    font-family: "canva studentfont";
+    display: flex;
+    justify-content: center;
 }
+
+.portfolio-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.projects__img {
+    padding-left: var(--spaceLarge);
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    height: 700px;
+}
+
+.projetcsImg {
+    padding-top: 15px;
+    width: fit-content;
+}
+
+.projects__video-instagram {
+    padding-left: var(--spaceLarge);
+    display: flex;
+    gap: 5;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.projects__video-tiktok {
+    padding-left: var(--spaceLarge);
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.projectsVideo {
+    padding-left: var(--spaceLarge);
+}
+
+.projects__img-me {
+    margin-left: var(--spaceLarge);
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    height: 600px;
+}
+
+.projetcsImg-me {
+    padding-top: 15px;
+    width: fit-content;
+}
+
+.product {
+    margin-left: var(--spaceLarge);
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    height: 400px;
+}
+
+.productImg {
+    padding-top: 15px;
+    width: fit-content;
+}
+
+
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
