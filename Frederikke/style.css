@@ -23,17 +23,15 @@
 }
 
 h2 {
-    font-family: "canva studentfont";
+    font-family: monospace;
     color: var(--font-headercolor);
 }
 
 h3 {
-    font-family: "canva studentfont";
     color: var(--font-labelcolor);
 }
 
 p {
-    font-family: "canva studentfont";
     color: var(--font-pcolor);
     line-height: 25px;
 }
@@ -45,7 +43,7 @@ body {
 }
 
 a {
-    font-family: "canva studentfont";
+    font-family: monospace;
     font-weight: 300;
     text-align: center;
     color: var(--font-headercolor);
