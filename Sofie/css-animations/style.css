@@ -14,19 +14,20 @@
     
   body {
     max-width: 1440px;
-    max-height: 100vh;
     margin: auto;
   }
     
   /* Slider */
   .slider-wrapper {
+    /* margin: 1rem; */
     margin: 0;
     position: relative;
     overflow: hidden;
   }
     
   .slides-container {
-    height: 100%;
+    /* height: calc(100% - 2rem); */
+    height: 100vh;
     width: 100%;
     display: flex;
     overflow: scroll;
@@ -168,7 +169,8 @@
     align-items: center;
     position: relative;
 
-    width: 100%;
+    width: 80%;
+    height: 100%;
 }
 .tap {
     width: 200px;

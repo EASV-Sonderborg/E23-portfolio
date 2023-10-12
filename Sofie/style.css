@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-/* :root {
-
-} */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=VT323&display=swap');
 
 * {
     margin:0;
@@ -34,16 +29,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
 }
 
 .intro {
-    margin-left: 2rem;
-    color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-left: 2rem;
+  color: #fefefe;
 }
 
 .hero__header {
   font-size: 50px;
-  margin-bottom: 2rem;
 }
 
 .hero__subheading {
@@ -196,53 +195,6 @@ body {
     font-weight: 100;
   }
 
-  /* .ribbon {
-    position: absolute;
-    right: -5px; top: -5px;
-    z-index: 1;
-    overflow: hidden;
-    width: 100px; 
-    height: 100px;
-    text-align: right;
-  } */
-  
-  /* .ribbon span {
-    background: #2989d8;
-    background: linear-gradient(#2989d8 0%, #1e5799 100%);
-    font-size: 12px;
-    font-weight: bold;
-    color: #FFF;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 20px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    width: 100px;
-    display: block;
-    
-    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 19px; right: -21px;
-  }
-
-  .ribbon span::before {
-    content: "";
-    position: absolute; left: 0px; top: 100%;
-    z-index: -1;
-    border-left: 3px solid #1e5799;
-    border-top: 3px solid #1e5799;
-    border-right: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-  }
-  .ribbon span::after {
-    content: "";
-    position: absolute; right: 0px; top: 100%;
-    z-index: -1;
-    border-left: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid #1e5799;
-    border-top: 3px solid #1e5799;
-  } */
 
   /* Footer */
   footer {
@@ -275,10 +227,18 @@ body {
              blinkTextCursor 900ms steps(40) infinite normal;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 9.6em;}
+  from { 
+    width: 0;
+  }
+  to {
+    width: 9.6em;
+  }
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+  from {
+    border-right-color: rgba(255,255,255,.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
