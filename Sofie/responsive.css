@@ -32,6 +32,31 @@
         gap: 1rem;
       }
 
+      .about {
+        width: 100%;
+      }
+
+      .about__info {
+        padding-right: .5rem;
+        padding-left: .5rem;
+        padding-bottom: .5rem;
+      }
+
+      .about__me {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+      }
+
+      .about__meBody:nth-child(1) {
+        padding: 0;
+      }
+
+      .about__image {
+        width: 95%;
+        margin: .5rem auto;
+      }
+
 }
 
 
