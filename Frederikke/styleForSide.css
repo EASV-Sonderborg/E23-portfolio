@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 .header {
     background-color: var(--header-color);
