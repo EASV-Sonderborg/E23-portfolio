@@ -1,5 +1,5 @@
 :root,:root.light {
-    --color-bg: #6e72ad;
+    --color-bg: #6E91AD;
     --color-fg: #000000;
   }
   
@@ -88,11 +88,11 @@
   }
     
   .slide:nth-child(2) {
-    background-color: 	#6eadaa;
+    background-color: 	#6E91AD;
   }
     
   .slide:nth-child(3) {
-    background-color: #ad8a6e;
+    background-color: #6E91AD;
   }
     
   .slide:nth-child(4) {
