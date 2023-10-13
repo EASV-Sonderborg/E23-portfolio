@@ -172,7 +172,7 @@ html {
     margin-left: var(--spaceLarge);
     display: flex;
     gap: 5px;
-    height: 600px;
+    height: 400px;
 }
 
 .projetcsImg-me {
@@ -184,7 +184,7 @@ html {
     margin-left: var(--spaceLarge);
     display: flex;
     gap: 5px;
-    height: 400px;
+    height: 350px;
 }
 
 .productImg {
@@ -192,7 +192,17 @@ html {
     width: fit-content;
 }
 
+.product-Img {
+    margin-left: var(--spaceLarge);
+    display: flex;
+    gap: 5px;
+    height: 300px;
+}
 
+.product__img {
+    padding-top: 15px;
+    width: fit-content;
+}
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
