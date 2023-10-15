@@ -147,59 +147,43 @@ footer {
 
 
 /* Earth */
-.load-5 .ball-holder {
-    animation: loadingE 8.3s linear infinite;
-  }
-  .load-5 {
-    margin-top: 2rem;
+.universe {
     position: absolute;
     z-index: -1;
-  }
-
-
-  .ring-2 {
-    position: relative;
-    width: 400px;
-    height: 225px;
-    margin: 0 auto;
-    border: 4px solid #96DEF8;;
-    border-radius: 100%;
-    transform: rotate(15deg);
-  }
-  .ball-holder {
-    position: absolute;
+    top: 8rem;
     display: flex;
-    width: 400px;
-    height: 225px;
-    left: 25px;
-    top: 0px;
     justify-content: center;
+}
+svg {
+    top: 0;
+    width: 65vmin;
+    height: 65vmin;
+    overflow: visible;
   }
-  .ball {
-    position: absolute;
-    top: 90px;
-    left: 60px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: #4282b3;
+  svg .ring ellipse {
+    stroke: var(--accent-color);
+    stroke-width: 1px;
+    fill: none;
   }
-
-
-  @keyframes loadingE {
+  svg .ring ellipse:nth-child(3) {
+    stroke-dasharray: 0 230;
+    animation-name: orbit;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    stroke-width: 8px;
+    stroke-linecap: round;
+  }
+  
+  @keyframes orbit {
     0% {
-        transform: rotate(0deg);
-        top: -20px;
-        left: -100px;
+      stroke-dashoffset: 0;
     }
     50% {
-        top: -60px;
-        left: 100px;
+      stroke-width: 4px;
     }
     100% {
-        transform: rotate(360deg);
-        top: -20px;
-        left: -100px;
+      stroke-dashoffset: 230;
     }
   }
 /* */
@@ -246,12 +230,12 @@ div[class] {
     position: absolute;
     z-index: -1;
     top: -5rem;
+    width: 100%;
 }
 
 .load-wrapp {
     float: left;
-    width: 140px;
-    height: 90px;
+    height: 6rem;
     text-align: center;
     background-color: var(--background-color);
 
@@ -477,12 +461,19 @@ div[class] {
 
 
 /* Skyer */
-.sky__placement {
+.sky__holder {
     position: absolute;
     z-index: -1;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+}
+.sky__placement {
+    width: 75%;
+    display: grid;
+    justify-content: center;
 }
 .square-holder {
-    margin: 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -491,20 +482,19 @@ div[class] {
 .square__top {
     width: 160px;
     height: 160px;
-    border-radius: 4px;
 }
 .load-7 .square__top {
-    animation: square__top 35s cubic-bezier(0.90, 0.80, 0.80, 0.90) infinite;
+    animation: square__top 35s cubic-bezier(0.95, 0.80, 0.80, 0.95) infinite;
 }
 @keyframes square__top {
     0% {
-      transform: translate(10px, 0);
+      transform: translate(-300%, 0);
     }
     50% {
-      transform: translate(900px, 0);
+      transform: translate(300%, 0);
     }
     100% {
-      transform: translate(10px, 0);
+      transform: translate(-300%, 0);
     }
 }
 
@@ -514,17 +504,17 @@ div[class] {
     border-radius: 4px;
 }
 .load-7 .square__middle {
-    animation: square__middle 41s cubic-bezier(0.90, 0.80, 0.80, 0.90) infinite;
+    animation: square__middle 41s cubic-bezier(0.95, 0.80, 0.80, 0.95) infinite;
 }
 @keyframes square__middle {
     0% {
-      transform: translate(900px, 0);
+      transform: translate(400%, 0);
     }
     50% {
-      transform: translate(10px, 0);
+      transform: translate(-400%, 0);
     }
     100% {
-      transform: translate(900px, 0);
+      transform: translate(400%, 0);
     }
 }
 
@@ -534,17 +524,17 @@ div[class] {
     border-radius: 4px;
 }
 .load-7 .square__bottom {
-    animation: square__bottom 30s cubic-bezier(0.90, 0.80, 0.80, 0.90) infinite;
+    animation: square__bottom 30s cubic-bezier(0.95, 0.80, 0.80, 0.95) infinite;
 }
 @keyframes square__bottom {
     0% {
-      transform: translate(10px, 0);
+      transform: translate(-300%, 0);
     }
     50% {
-      transform: translate(900px, 0);
+      transform: translate(250%, 0);
     }
     100% {
-      transform: translate(10px, 0);
+      transform: translate(-300%, 0);
     }
 }
 
