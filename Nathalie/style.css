@@ -150,10 +150,15 @@ footer {
 .universe {
     position: absolute;
     z-index: -1;
-    top: 8rem;
     display: flex;
     justify-content: center;
+    top: 4rem;
+    right: 0rem
 }
+.universe__gif {
+    width: 40rem;
+}
+/*
 svg {
     top: 0;
     width: 65vmin;
@@ -187,10 +192,6 @@ svg {
     }
   }
 /* */
-
-
-
-
 
 
 
