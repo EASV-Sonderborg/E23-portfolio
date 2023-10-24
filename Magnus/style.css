@@ -83,7 +83,6 @@ text-decoration: none;
 }
 
 .project{
-    width: 100%;
     color: var(--secondColor);
 }
 .projects__headline{
@@ -92,8 +91,16 @@ font-family: 'Outfit', sans-serif;
 text-align: center;
 
 }
+.project__foefi{
+    
+}
+.foefi__logo{
+    
 
-
+}
+.project__projectHeadlines{
+    
+}
 
 
 
