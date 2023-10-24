@@ -1,1 +1,75 @@
 @import url(customprop.css);
+.linkButton{
+    height: 3rem;
+    font-size: var(--breadText);
+    
+    color: var(--secondColor);
+    font-family: 'Poppins', sans-serif;
+    border:1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    background: #FDFFF7;
+    box-shadow:  5px 5px 10px #d7d9d2,
+                 -5px -5px 10px #ffffff;
+
+}
+
+.header{
+display: flex;
+flex-direction: column;
+border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+padding-bottom: var(--smallSpacing);
+
+}
+.headerText{
+    font-size: var(--mainText);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+.headerFlags{
+    display: flex;
+    flex-direction: row;
+    gap: var(--tinySpacing);
+    margin-bottom: var(--smallSpacing);
+    justify-content: center;
+}
+
+.flagsImage{
+    width: 2.5rem;
+    filter: grayscale(60%);
+}
+
+.headerImage{
+margin-bottom: var(--tinySpacing);
+}
+.headerButton{
+font-weight: 580;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: var(--mainText);
+    margin-bottom: 0;
+}
+
+.buttons{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--tinySpacing);
+    width: 100%;
+}
+.socialButton{
+    font-size: 4rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

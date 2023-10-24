@@ -5,17 +5,21 @@
     --fourthColor:#B4ADEA;
     --fithColor:#FFED65;
     --sixColor:#e3e5de;
-
-
-    --maintext: 3rem;
-    --secondtext: 2rem;
-    --breadtext: 1.5rem;
-
-
-    --tinyspacing:0.5rem;
-    --smallspacing:1rem;
-    --midspacing:1.5rem;
-    --bigspacing:2rem;
+    --linkedin:#0077b5;
     
+    
+
+
+    --mainText: 2.5rem;
+    --secondText: 2rem;
+    --breadText: 1.5rem;
+    --smallText: 1rem;
+
+
+    --tinySpacing:0.5rem;
+    --smallSpacing:1rem;
+    --midSpacing:1.5rem;
+    --bigSpacing:2rem;
+
     
 }
