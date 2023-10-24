@@ -92,18 +92,51 @@ font-family: 'Outfit', sans-serif;
 text-align: center;
 
 }
+
+.project__show{
+    display: flex;
+    flex-direction: column;
+    gap: var(--tinySpacing);
+    margin: var(--smallSpacing);
+}
+.project__styler{
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 0.2fr 1.8fr; 
+    grid-template-areas: 
+      "project__logo projectHeadlines"
+      "project__logo project__tags"
+      "project__logo projectInfo"; 
+      align-items: center;
+  }
+.project__tags{
+ font-size: var(--smallText);
+ opacity: 60%;
+ grid-area: project__tags ;
+ margin: 0;
+ margin-bottom: var(--tinySpacing);
+}
 .project__foefi{
     
 }
-.foefi__logo{
-    width: 5rem;
-
+.project__logo{
+    height: 5rem;
+    padding: var(--tinySpacing);
+    grid-area: project__logo;
 }
 .project__projectHeadlines{
     font-family: 'Outfit', sans-serif;
+    font-size: var(--breadText);
+    grid-area: projectHeadlines;
+    margin-bottom: 0;
 }
 
 .project__projectInfo{
+    grid-area: projectInfo;
+    margin:0;
     font-family: 'Zilla Slab', serif;
+    font-size: var(--tinyText);
 }
 
