@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-/* :root {
-
-} */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=VT323&display=swap');
 
 * {
     margin:0;
@@ -32,16 +29,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
 }
 
 .intro {
-    margin-left: 5rem;
-    color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-left: 2rem;
+  color: #fefefe;
+}
+
+.hero__header {
+  font-size: 50px;
+}
+
+.hero__subheading {
+  font-family: 'Merienda', cursive;
+  font-size: 22px;
 }
 
 /* Speech bubble  */
 /* Source: https://codepen.io/t_afif/pen/eYMbrJN */
 .bubble {
+  visibility: visible;
+
     --r: 25px; /* the radius */
     --t: 30px; /* the size of the tail */
     
@@ -59,8 +72,8 @@ body {
     box-shadow: -1px 4px 20px 6px rgb(0, 0, 0, .25);
 
     position: absolute;
-    top: 180px;
-    right: 25px;
+    top: 220px;
+    right: 10px;
   }
 
   .left {
@@ -84,8 +97,8 @@ body {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: .75rem;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .project {
@@ -94,10 +107,11 @@ body {
 
     border-radius: 10px;
     background-color: rgb(200, 200, 200, 0.25);
-    backdrop-filter: blur(20);
+    backdrop-filter: blur(20px);
     
+    box-shadow: -2px -2px 20px rgb(20, 20, 20, .5);
+
     width: 100%;
-    height: fit-content;
 
     color: #fefefe;
   }
@@ -114,17 +128,20 @@ body {
   }
 
   .project:hover {    
-    box-shadow: 2px 3px 12px rgb(64, 156, 255, .5);
+    box-shadow: 
+    -2px -2px 20px rgb(105, 53, 156);
     filter: none;
 }
 
 .project__headline {
-    margin-bottom: .25rem;
+    margin-bottom: .75rem;
     color: #fefefe;
 }
 
 .project__about {
-    padding: .5rem;
+    padding-left: .5rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 }
 
 .project__header {
@@ -184,53 +201,54 @@ body {
     font-weight: 100;
   }
 
-  /* .ribbon {
-    position: absolute;
-    right: -5px; top: -5px;
-    z-index: 1;
-    overflow: hidden;
-    width: 100px; 
-    height: 100px;
-    text-align: right;
-  } */
-  
-  /* .ribbon span {
-    background: #2989d8;
-    background: linear-gradient(#2989d8 0%, #1e5799 100%);
-    font-size: 12px;
-    font-weight: bold;
-    color: #FFF;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 20px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    width: 100px;
-    display: block;
-    
-    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 19px; right: -21px;
+
+  /* - - - - - About me - - - - - */
+  .about {
+    color: #fefefe;
+    margin-bottom: 1.5rem;
   }
 
-  .ribbon span::before {
-    content: "";
-    position: absolute; left: 0px; top: 100%;
-    z-index: -1;
-    border-left: 3px solid #1e5799;
-    border-top: 3px solid #1e5799;
-    border-right: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+  .about__header {
+    margin-bottom: .75rem;
   }
-  .ribbon span::after {
-    content: "";
-    position: absolute; right: 0px; top: 100%;
-    z-index: -1;
-    border-left: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid #1e5799;
-    border-top: 3px solid #1e5799;
-  } */
+
+  .about__me {
+    width: 100%;
+
+    display: flex;
+    gap: 2rem;
+
+    background-color: rgb(240, 240, 240, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: .75rem;
+  }
+
+  .about__info {
+    /* grid-column: 1; */
+
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+
+  .about__meBody:nth-child(1) {
+    padding-top: .5rem;
+    margin-bottom: .25rem;
+  }
+
+  .about__image {
+    /* grid-column: 2; */
+
+    border-radius: .75rem;
+    width: 300px;
+    box-shadow: -2px -2px 20px rgb(20, 20, 20, .5);
+    /* margin: 0 auto; */
+  }
+  
+  .about__image:hover {
+    box-shadow: 
+    -2px -2px 20px rgb(255, 16, 240, .5);
+  }
 
   /* Footer */
   footer {
@@ -251,7 +269,6 @@ body {
     width: fit-content;
    
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
     
     white-space: nowrap;
     overflow: hidden;
@@ -264,10 +281,18 @@ body {
              blinkTextCursor 900ms steps(40) infinite normal;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 9.6em;}
+  from { 
+    width: 0;
+  }
+  to {
+    width: 9.6em;
+  }
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+  from {
+    border-right-color: rgba(255,255,255,.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }

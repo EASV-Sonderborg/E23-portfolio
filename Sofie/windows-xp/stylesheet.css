@@ -386,6 +386,7 @@ h5 {
 }
 
 .calculator__body {
+    text-shadow: none;
     font-size: 12px;
     cursor: pointer;
 }

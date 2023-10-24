@@ -1,86 +1,178 @@
-.infoMe {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-
-    grid-template-rows: 30px 250px auto;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.info {
-    margin-left: 2rem;
+html {
+    scroll-behavior: smooth;
 }
 
-.videoMe-video {
-    margin: auto;
-    padding: auto;
-    margin-top: var(--spaceSmall);
+/* header */
+.header {
+    background-color: var(--header-color);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    width: 100vw;
+    z-index: 3;
 }
 
-.textme__header {
-    grid-column: 2;
-    grid-row: 1;
+/* header- ul- listen */
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--header-color)
 }
 
-.textme__text {
-    grid-column: 2;
-    grid-row: 2;
+.header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.4s;
 }
 
-.pictureMe__header {
-    margin-top: 15%;
-    grid-column: 1;
-    grid-row: 3;
-    margin-left: var(--spaceLarge);
+.header ul a:hover {
+    background-color: #b9bbbc;
 }
 
-.pictureMe-text {
-    grid-column: 1;
-    grid-row: 4;
-    margin-left: var(--spaceLarge);
+/* header- logo */
+.header .logo {
+    width: auto;
+    margin: 2px;
+    padding: 15px;
+    padding-right: 25px;
+    float: right;
+    display: block;
+    font-size: 2em;
+
 }
 
-.pictureMe-img {
-    max-width: auto;
-    max-height: auto;
-    border-radius: 10%;
-
-    grid-column: 2;
-    grid-row: 4;
+/* header- hamburger-menu */
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 }
 
-.projects {
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+
+}
+
+/* header- hamburger- menu/ stregerne */
+.header .menu-icon .nav-icon {
+    background: var(--font-headercolor);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: var(--font-headercolor);
+    content: "";
+    display: block;
+    height: 100%;
     width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
 }
 
-.projectsHeader {
+.header .menu-icon .nav-icon::after {
+    background: var(--font-headercolor);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+/* chek-box væk */
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 100vh;
+}
+
+/* header- hamburger- menu animation- så det bliver til et kryds/ stregerne */
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.myWork {
+    background-image: url(images/background.jpg);
+    background-size: 100vw;
+    width: 100vw;
+}
+
+.myWork-header {
+    font-family: "canva studentfont";
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-.project__video {
-    margin-left: var(--spaceLarge);
+.portfolio-img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.projetcs__img {
-    margin-left: var(--spaceLarge);
+.projects__img {
+    padding-left: var(--spaceLarge);
     display: flex;
-    flex-direction: row;
     gap: 5px;
     height: 700px;
-
-}
-
-.projetcs__img-me {
-    margin-left: var(--spaceLarge);
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    height: 600px;
 }
 
 .projetcsImg {
+    padding-top: 15px;
     width: fit-content;
+}
+
+.projects__video-instagram {
+    padding-left: var(--spaceLarge);
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.projects__video-tiktok {
+    padding-left: var(--spaceLarge);
+    display: flex;
+    gap: 5px;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.projectsVideo {
+    padding-left: var(--spaceLarge);
+}
+
+.projects__img-me {
+    margin-left: var(--spaceLarge);
+    display: flex;
+    gap: 5px;
+    height: 400px;
 }
 
 .projetcsImg-me {
@@ -91,9 +183,8 @@
 .product {
     margin-left: var(--spaceLarge);
     display: flex;
-    flex-direction: row;
     gap: 5px;
-    height: 400px;
+    height: 350px;
 }
 
 .productImg {
@@ -101,29 +192,17 @@
     width: fit-content;
 }
 
-.project__video-instagram {
+.product-Img {
+    margin-left: var(--spaceLarge);
     display: flex;
     gap: 5px;
-    width: 100%;
-    overflow-x: scroll;
-    margin-left: var(--spaceLarge);
+    height: 300px;
 }
 
-.project__video-tiktok {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    margin-left: var(--spaceLarge);
-    max-height: 60%;
-    max-width: 60%;
+.product__img {
+    padding-top: 15px;
+    width: fit-content;
 }
-
-.projects__header {
-    margin-left: var(--spaceLarge);
-}
-
-
-
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {

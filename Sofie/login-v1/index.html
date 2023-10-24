@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9ad229eaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Version 1</title>
+</head>
+<body>
+    <main>
+        <h1>Life would succ without you so we're delighted to see you again!</h1>
+        
+        <article class="information">
+            <section class="loginSignup">
+                <button class="btn loginbtn">Login</button>
+                <button class="btn signupbtn --inactiveBtn --right">Signup</button>
+            </section>
+        
+            <section class="header loginHeader">
+                <H2>Long thyme no see!</H2>
+                <h3>So much have happened since your departure</h3>
+            </section>
+        
+            <form class="login">
+                <label for="username"><i class="icon fa-solid fa-user"></i>Username</label>
+                <input id="username" name="user_name" type="text" placeholder=" " autocomplete="username" required>        
+                <label for="password"><i class="icon fa-solid fa-lock"></i>Password</label>
+                <section class="password__check">
+                        <input id="password" type="password" required>
+                        <i class="icon eyeIcon fa-solid fa-eye"></i>
+                </section>
+
+                <form action="complete.html" class="submitArea">
+                    <button class="submit" type="submit">Lets go!</button>
+                    <p class="submitArea--text">Forgot your password? <a class="submitArea--link" href="#">Tap here</a></p>
+                </form>
+            </form>
+        
+            <form class="signup --inactive">
+                <label for="username2"><i class="icon fa-solid fa-user"></i>Username</label>
+                <input id="username2" name="user_name" type="text" required>
+                
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" required>
+                    
+                <label for="firstName">Last Name</label>
+                <input id="lastName" type="text" required>
+                    
+                <label for="email"><i class="icon fa-solid fa-envelope"></i>Email</label>
+                <input id="email" type="email" required>
+        
+                <label for="password2"><i class="icon fa-solid fa-lock"></i>Password</label>
+                <input id="password2" type="password" required>
+
+                <form action="complete.html">
+                    <button class="submit" type="submit">Sign me up!</button>
+                </form>
+            </form>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
