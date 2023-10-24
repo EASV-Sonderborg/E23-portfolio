@@ -84,6 +84,7 @@ text-decoration: none;
 
 .project{
     color: var(--secondColor);
+    
 }
 .projects__headline{
 padding: var(--tinySpacing);
@@ -95,12 +96,14 @@ text-align: center;
     
 }
 .foefi__logo{
-    
+    width: 5rem;
 
 }
 .project__projectHeadlines{
-    
+    font-family: 'Outfit', sans-serif;
 }
 
-
+.project__projectInfo{
+    font-family: 'Zilla Slab', serif;
+}
 
