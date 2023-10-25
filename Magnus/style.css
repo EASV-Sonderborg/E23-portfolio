@@ -140,3 +140,35 @@ text-align: center;
     font-size: var(--tinyText);
 }
 
+.custom-shape-divider-bottom-1698235614 {
+    position: absolute;
+    bottom: 2.8rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698235614 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 51px;
+}
+
+.custom-shape-divider-bottom-1698235614 .shape-fill {
+    fill: #50514F;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondColor);
+}
+.footer__text{
+    color: var(--firstColor);
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+
+}
