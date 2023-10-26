@@ -1,6 +1,6 @@
 @media screen and (min-width: 310px) and (max-width: 430px) {
     .hero {
-        background-image: url(images/think1.png);
+        background-image: url(images/think1.webp);
         background-size: cover;
         background-position: center;
 
@@ -54,6 +54,7 @@
 
       .about__image {
         width: 95%;
+        height: 95%;
         margin: .5rem auto;
       }
 

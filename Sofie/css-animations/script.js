@@ -45,20 +45,20 @@ for (let i = 0; i < hearts; i++) {
     
 
     // Checkbox animation
-    const theme = document.getElementById('theme');
+const theme = document.getElementById('theme');
 const changeTheme = document.getElementById('mode');
 
 changeTheme.onchange = (e) => {
   if (changeTheme.checked === true) {
-    console.log("Checked")
-    document.documentElement.classList.remove("dark")
-    document.documentElement.classList.add("light")
-    window.localStorage.setItem('mode', 'light');
-  } else {
     console.log("Not Checked")
     document.documentElement.classList.remove("light")
     document.documentElement.classList.add("dark")
     window.localStorage.setItem('mode', 'dark');
+  } else {
+    console.log("Checked")
+    document.documentElement.classList.remove("dark")
+    document.documentElement.classList.add("light")
+    window.localStorage.setItem('mode', 'light');
   }
 }
 const mode = window.localStorage.getItem('mode');
