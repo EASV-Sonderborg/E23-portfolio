@@ -56,64 +56,65 @@
           </section>
   
           <form class="form" name="form">
-              <section class="inputfield">
-                  <input type="text" class="field" name="answer">
+            <section class="inputfield">
+              <input type="text" class="field" name="answer">
+            </section>
+        
+            <article class="keypad">
+              <section class="key-row">
+                <div class="inset-button"></div>
+                <button class="key-large --action">Backspace</button>
+                <input class="key-large --action" type = "button" value = "CE" onclick = "form.answer.value = ' ' " id= "clear" >
+                <input class="key-large --action" type = "button" value = "C" onclick = "form.answer.value = ' ' " id= "clear" >
               </section>
         
-                <article class="keypad">
-                  <section class="key-row">
-                    <div class="inset-button"></div>
-                    <button class="key-large --action">Backspace</button>
-                    <input class="key-large --action" type = "button" value = "CE" onclick = "form.answer.value = ' ' " id= "clear" >
-                    <input class="key-large --action" type = "button" value = "C" onclick = "form.answer.value = ' ' " id= "clear" >
-                  </section>
+              <section class="key-col --m">
+                <button class="key --action">MC</button>
+                <button class="key --action">MR</button>
+                <button class="key --action">MS</button>
+                <button class="key --action">M+</button>
+              </section>
         
-                  <section class="key-col --m">
-                    <button class="key --action">MC</button>
-                    <button class="key --action">MR</button>
-                    <button class="key --action">MS</button>
-                    <button class="key --action">M+</button>
-                  </section>
+              <section class="key-col">
+                <input class="key" type = "button" value = "7" onclick = "form.answer.value += '7' ">
+                <input class="key" type = "button" value = "4" onclick = "form.answer.value += '4' ">
+                <input class="key" type = "button" value = "1" onclick = "form.answer.value += '1' ">
+                <input class="key" type = "button" value = "0" onclick = "form.answer.value += '0' ">
+              </section>
         
-                  <section class="key-col">
-                    <input class="key" type = "button" value = "7" onclick = "form.answer.value += '7' ">
-                    <input class="key" type = "button" value = "4" onclick = "form.answer.value += '4' ">
-                    <input class="key" type = "button" value = "1" onclick = "form.answer.value += '1' ">
-                    <input class="key" type = "button" value = "0" onclick = "form.answer.value += '0' ">
-                  </section>
+              <section class="key-col">
+                <input class="key" type = "button" value = "8" onclick = "form.answer.value += '8' ">
+                <input class="key" type = "button" value = "5" onclick = "form.answer.value += '5' ">
+                <input class="key" type = "button" value = "2" onclick = "form.answer.value += '2' ">
+                <input class="key --action" type = "button" value = "+/-" onclick = "form.answer.value += '+/-' ">
+              </section>
         
-                  <section class="key-col">
-                      <input class="key" type = "button" value = "8" onclick = "form.answer.value += '8' ">
-                      <input class="key" type = "button" value = "5" onclick = "form.answer.value += '5' ">
-                      <input class="key" type = "button" value = "2" onclick = "form.answer.value += '2' ">
-                      <input class="key --action" type = "button" value = "+/-" onclick = "form.answer.value += '+/-' ">
-                  </section>
-        
-                  <section class="key-col">
-                      <input class="key" type = "button" value = "9" onclick = "form.answer.value += '9' ">
-                      <input class="key" type = "button" value = "6" onclick = "form.answer.value += '6' ">
-                      <input class="key" type = "button" value = "3" onclick = "form.answer.value += '3' ">
-                      <input class="key dot" type = "button" value = "." onclick = "form.answer.value += '.' ">
-                  </section>
+              <section class="key-col">
+                <input class="key" type = "button" value = "9" onclick = "form.answer.value += '9' ">
+                <input class="key" type = "button" value = "6" onclick = "form.answer.value += '6' ">
+                <input class="key" type = "button" value = "3" onclick = "form.answer.value += '3' ">
+                <input class="key dot" type = "button" value = "." onclick = "form.answer.value += '.' ">
+              </section>
                   
-                  <section class="key-col">
-                      <input class="key --action" type = "button" value = "/" onclick = "form.answer.value += '/' ">
-                      <input class="key --action" type = "button" value = "*" onclick = "form.answer.value += '*' ">
-                      <input class="key --action" type = "button" value = "-" onclick = "form.answer.value += '-' ">
-                      <input class="key --action" type = "button" value = "+" onclick = "form.answer.value += '+' ">
-                  </section>
+              <section class="key-col">
+                <input class="key --action" type = "button" value = "/" onclick = "form.answer.value += '/' ">
+                <input class="key --action" type = "button" value = "*" onclick = "form.answer.value += '*' ">
+                <input class="key --action" type = "button" value = "-" onclick = "form.answer.value += '-' ">
+                <input class="key --action" type = "button" value = "+" onclick = "form.answer.value += '+' ">
+              </section>
                   
-                  <section class="key-col">
-                      <input class="key" type = "button" value = "sqrt" onclick = "form.answer.value += 'sqrt' ">
-                      <input class="key" type = "button" value = "%" onclick = "form.answer.value += '%' ">
-                      <input class="key" type = "button" value = "1/x" onclick = "form.answer.value += '1/x' ">
-                      <input class="key --action" type = "button" value = "=" onclick = "form.answer.value = eval(form.answer.value) ">
-                  </section>
-                </article>
+              <section class="key-col">
+                <input class="key" type = "button" value = "sqrt" onclick = "form.answer.value += 'sqrt' ">
+                <input class="key" type = "button" value = "%" onclick = "form.answer.value += '%' ">
+                <input class="key" type = "button" value = "1/x" onclick = "form.answer.value += '1/x' ">
+                <input class="key --action" type = "button" value = "=" onclick = "form.answer.value = eval(form.answer.value) ">
+              </section>
+            </article>
           </form>
           
         </article>
-
+      </article>
+      
       <article class="app makeDraggable --webBrowser">
         <section class="app__header">
           <section class="app__header--description">
@@ -148,8 +149,31 @@
               <button class="google__btn">I'm Feeling Lucky</button>
             </section>
           </section>
-
         </article>
+
+        
+          <!-- <section class="google">
+            <section class="google__letters">
+              <h1>
+                <span class="--blue">G</span>
+                <span class="--red">o</span>
+                <span class="--yellow">o</span>
+                <span class="--blue">g</span>
+                <span class="--green">l</span>
+                <span class="--red">e</span>
+              </h1>
+            </section>
+      
+            <section class="google__search">
+              <form action="https://www.google.com/search" method="GET">
+                <input class="search" type="search" name="q" placeholder="Search Google" required>
+                <button class="google__btn" type="submit">Google Search</button>
+                <button class="google__btn" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+              </form>
+            </section>
+          </section> -->
+
+
       </article>
     </main>
 
