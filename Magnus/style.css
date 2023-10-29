@@ -3,6 +3,9 @@
 body{
     margin:0;
     background-color: var(--firstColor);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -73,6 +76,8 @@ text-decoration: none;
    
    margin: 0;
     width: 100%;
+    flex: 1;
+    padding-bottom: 3rem;
     
 }
 .headshot{
@@ -172,8 +177,8 @@ text-align: center;
    bottom: 0;
     width: 100%;
     background-color: var(--secondColor);
-    position: relative;
-    margin-bottom: 0;
+    position: absolute;
+    height: fit-content;
     
 }
 .footer__text{
@@ -181,7 +186,8 @@ text-align: center;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     padding: 1rem;
-    margin-bottom: 0;
+    margin: 0;
+   
 }
 
 
@@ -231,6 +237,8 @@ text-align: center;
     .project__logo {
         max-width: 100%; 
     }
-    
+    .footer{
+        position: fixed;
+    }
     
 }
