@@ -169,16 +169,17 @@ text-align: center;
     fill: #50514F;
 }
 .footer{
-    position: absolute;
-    bottom: 0;
+   bottom: 0;
     width: 100%;
     background-color: var(--secondColor);
+    position: absolute;
+    
 }
 .footer__text{
     color: var(--firstColor);
     text-align: center;
     font-family: 'Outfit', sans-serif;
-
+    padding: 1rem;
 }
 
 
