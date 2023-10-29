@@ -11,6 +11,7 @@ body{
    flex-direction: column;
    margin-bottom: 0;
    background-color: var(--secondColor);
+   position: relative;
 }
 
 .header__name{
@@ -21,10 +22,6 @@ body{
   color: var(--firstColor);
 }
 
-.nav{
-   
-   
-}
 
 .navList{
    display: flex;
@@ -46,13 +43,10 @@ text-decoration: none;
 .navLinks{
     color: var(--firstColor);
 }
-.navIcon{
-       
-}
 
 .custom-shape-divider-bottom-1698172687 {
     position: absolute;
-    bottom: 80%;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -118,9 +112,7 @@ text-align: center;
  margin: 0;
  margin-bottom: var(--tinySpacing);
 }
-.project__foefi{
-    
-}
+
 .project__logo{
     height: 5rem;
     padding: var(--tinySpacing);
@@ -171,4 +163,31 @@ text-align: center;
     text-align: center;
     font-family: 'Outfit', sans-serif;
 
+}
+
+
+@media (min-width: 769px) {
+    .project__show {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .project__styler {
+        border: 1px solid black;
+        border-radius: 0.3rem;
+        margin: var(--smallSpacing);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project__logo {
+        max-width: 100%; /* Ensure the image doesn't overflow */
+    }
+    
+    .project__styler.largest {
+        flex: none; /* Make the largest element not grow */
+    }
 }
