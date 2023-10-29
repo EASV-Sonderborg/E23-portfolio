@@ -172,7 +172,8 @@ text-align: center;
    bottom: 0;
     width: 100%;
     background-color: var(--secondColor);
-    position: absolute;
+    position: relative;
+    margin-bottom: 0;
     
 }
 .footer__text{
@@ -180,6 +181,7 @@ text-align: center;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     padding: 1rem;
+    margin-bottom: 0;
 }
 
 
