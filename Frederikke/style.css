@@ -174,38 +174,11 @@ a {
 
 .underFooter {
     background-color: var(--footer-color);
-    font-family: "Bebas Neue";
+    font-family: monospace;
     font-weight: 300;
     text-align: center;
     padding: 0.5rem;
     color: var(--font-color);
-}
-
-/* footer__links */
-
-/* footer__links-menu */
-.footer__links {
-    color: var(--footer-color);
-    list-style: none;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.footer__links li {
-    padding: 0.5rem;
-}
-
-.footer__links li a {
-    opacity: 100%;
-    transition: 0.4s;
-}
-
-.footer__links li a:hover {
-    opacity: 40%;
-}
-
-.footer__links li a:hover {
-    opacity: 40%;
 }
 
 /* footer__socialMedia-icon */
@@ -280,7 +253,7 @@ a {
 
     .upperFooter {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         background-color: var(--footer-color);
         justify-items: center;
     }

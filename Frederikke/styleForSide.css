@@ -237,7 +237,7 @@ html {
 
     .upperFooter {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         background-color: var(--footer-color);
         justify-items: center;
     }
